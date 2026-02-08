@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CTASection from '@/components/CTASection';
 import styles from './why.module.css';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
@@ -171,24 +172,13 @@ export default function WhyAmelcorpPage() {
                 </section>
 
                 {/* Final CTA */}
-                <section className={styles.finalCta}>
-                    <div className={styles.container}>
-                        <h2 className={styles.ctaTitle}>{t('cta.title')}</h2>
-                        <p className={styles.ctaDesc}>
-                            {t('cta.desc')}
-                        </p>
-                        <Link href="/book" className={styles.ctaBtn}>
-                            {t('cta.btn')} <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                        <div className={styles.ctaTrust}>
-                            {t.raw('cta.trust').map((item, idx) => (
-                                <div className={styles.trustItem} key={idx}>
-                                    <i className={`fa-solid ${idx === 0 ? 'fa-shield-halved' : idx === 1 ? 'fa-file-contract' : 'fa-handshake'}`}></i> {item}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
+                <CTASection
+                    title={t('cta.title')}
+                    desc={t('cta.desc')}
+                    primaryCtaText={t('cta.btn')}
+                    primaryCtaLink="/book"
+                    variant="dark"
+                />
             </main>
 
             <Footer />

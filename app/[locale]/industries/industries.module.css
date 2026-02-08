@@ -437,6 +437,12 @@
         height: 300px;
     }
 
+    .footerActions {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
     .ctaGrid {
         flex-direction: column;
         gap: 3rem;

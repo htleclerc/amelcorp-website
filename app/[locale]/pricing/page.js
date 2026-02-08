@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CTASection from '@/components/CTASection';
 import styles from './pricing.module.css';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
@@ -190,21 +191,15 @@ export default function PricingPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className={styles.ctaSection}>
-                    <div className={styles.container}>
-                        <h2 className={styles.heroTitle}>{t('cta.title')}</h2>
-                        <p className={styles.heroDesc}>{t('cta.desc')}</p>
-
-                        <div className={styles.ctaGrid}>
-                            <Link href="/book" className={styles.btnWhite}>
-                                <i className="fa-solid fa-calendar-check"></i> {t('cta.primary')}
-                            </Link>
-                            <Link href="/book" className={styles.btnGhost}>
-                                <i className="fa-solid fa-file-lines"></i> {t('cta.secondary')}
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                <CTASection
+                    title={t('cta.title')}
+                    desc={t('cta.desc')}
+                    primaryCtaText={t('cta.primary')}
+                    primaryCtaLink="/book"
+                    secondaryCtaText={t('cta.secondary')}
+                    secondaryCtaLink="/book"
+                    variant="red"
+                />
             </main>
 
             <Footer />

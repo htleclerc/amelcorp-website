@@ -1,137 +1,109 @@
 .footer {
     background-color: var(--primary-navy);
     color: var(--white);
+    padding-top: 0;
 }
 
-.ctaBand {
-    background: var(--primary-blue);
-    padding: var(--space-24) 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.ctaBand::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-}
-
-.ctaContainer {
-    position: relative;
-    z-index: 10;
-    max-width: 800px;
+.container {
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0 var(--space-6);
 }
 
-.ctaTitle {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: var(--space-4);
-    letter-spacing: -0.025em;
-}
-
-.ctaDesc {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    margin-bottom: var(--space-8);
-}
-
-.ctaActions {
-    display: flex;
-    gap: var(--space-4);
-    justify-content: center;
-}
-
-.btnWhite {
-    background: var(--white);
-    color: var(--primary-blue);
-}
-
-.btnWhite:hover {
-    background: #F1F5F9;
-}
-
-.btnOutline {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: var(--white);
-}
-
-.btnOutline:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--white);
-}
-
-.mainFooter {
-    padding: var(--space-24) 0;
+.top {
+    padding: var(--space-16) 0;
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    gap: var(--space-12);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.footerGrid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: var(--space-12);
-}
-
-.colBrand {
+.brand {
     max-width: 320px;
 }
 
-.logoText {
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: -1px;
-    display: block;
-    margin-bottom: var(--space-4);
+.logoRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+}
+
+.logo {
+    border-radius: var(--radius-sm);
+}
+
+.brandName {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.brandHighlight {
+    color: var(--primary-red);
 }
 
 .brandDesc {
     color: var(--text-light);
     font-size: 0.9375rem;
-    margin-bottom: var(--space-6);
+    line-height: 1.6;
+    margin-bottom: var(--space-8);
 }
 
 .socials {
     display: flex;
-    gap: var(--space-3);
+    gap: var(--space-4);
 }
 
-.socialIcon {
-    width: 40px;
-    height: 40px;
+.socialLink {
+    width: 36px;
+    height: 36px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
-    transition: var(--transition-fast);
+    color: var(--white);
+    transition: var(--transition-base);
 }
 
-.socialIcon:hover {
-    background: rgba(255, 255, 255, 0.1);
+.socialLink:hover {
+    background: var(--primary-blue);
     transform: translateY(-2px);
 }
 
-.col h3 {
-    font-size: 0.875rem;
+.linksGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+}
+
+.colTitle {
+    font-size: 0.75rem;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: var(--space-6);
     color: var(--white);
+    margin-bottom: var(--space-6);
 }
 
-.linkList {
+.list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
 }
 
-.linkList li {
-    margin-bottom: var(--space-4);
+.list a {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    transition: var(--transition-fast);
+}
+
+.list a:hover {
+    color: var(--white);
 }
 
 .contactItem {
@@ -139,36 +111,21 @@
     align-items: center;
     gap: var(--space-3);
     color: var(--text-light);
-}
-
-.contactIcon {
-    width: 24px;
-    color: var(--primary-blue);
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.linkList a {
-    color: var(--text-light);
-    font-size: 0.9375rem;
-}
-
-.linkList a:hover {
-    color: var(--white);
-    padding-left: 4px;
-}
-
-.copyright {
-    padding: var(--space-6) 0;
     font-size: 0.875rem;
-    color: var(--text-light);
 }
 
-.copyrightContainer {
+.contactItem i {
+    width: 16px;
+    color: var(--primary-blue);
+}
+
+.bottom {
+    padding: var(--space-8) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8125rem;
+    color: var(--text-light);
 }
 
 .legalLinks {
@@ -176,37 +133,58 @@
     gap: var(--space-6);
 }
 
-.legalLinks a {
+.legalLink {
     color: var(--white);
-    transition: var(--transition-fast);
+    font-weight: 600;
 }
 
-.legalLinks a:hover {
+.legalLink:hover {
     color: var(--primary-red);
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .copyrightContainer {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--space-4);
-    }
-
-    .legalLinks {
-        flex-direction: column;
-        gap: var(--space-2);
-    }
-}
-
 @media (max-width: 1024px) {
-    .footerGrid {
-        grid-template-columns: 1fr 1fr;
+    .top {
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+    }
+
+    .brand {
+        max-width: none;
     }
 }
 
-@media (max-width: 640px) {
-    .footerGrid {
+@media (max-width: 768px) {
+    .linksGrid {
         grid-template-columns: 1fr;
+        gap: var(--space-8);
+        text-align: center;
+    }
+
+    .brand {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .logoRow {
+        justify-content: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .list {
+        align-items: center;
+    }
+
+    .contactItem {
+        justify-content: center;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: var(--space-4);
+        text-align: center;
     }
 }

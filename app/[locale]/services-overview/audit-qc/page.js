@@ -1,5 +1,6 @@
 import Header from '../../../../components/Header';
 import Footer from '../../../../components/Footer';
+import CTASection from '@/components/CTASection';
 import styles from './audit.module.css';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
@@ -241,24 +242,15 @@ export default function AuditQCService() {
                 </section>
 
                 {/* Bottom CTA Strip */}
-                <section className={styles.bottomCta}>
-                    <div className="container">
-                        <div className={styles.ctaFlex}>
-                            <div>
-                                <h3 className={styles.ctaTitle}>{t('footer.title')}</h3>
-                                <p className={styles.ctaDesc}>{t('footer.desc')}</p>
-                            </div>
-                            <div className={styles.ctaButtons}>
-                                <Link href="/services-overview" className={styles.btnSecondary}>
-                                    {t('footer.viewOther')}
-                                </Link>
-                                <Link href="/book" className={styles.btnSmallRed}>
-                                    {t('footer.bookNow')} <i className="fa-solid fa-arrow-right"></i>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <CTASection
+                    title={t('footer.title')}
+                    desc={t('footer.desc')}
+                    primaryCtaText={t('footer.bookNow')}
+                    primaryCtaLink="/book"
+                    secondaryCtaText={t('footer.viewOther')}
+                    secondaryCtaLink="/services-overview"
+                    variant="horizontal"
+                />
             </main>
 
             <Footer />

@@ -3,11 +3,14 @@
     min-height: 90vh;
     display: flex;
     align-items: center;
-    background-image: url('/assets/hero_bg.png');
-    background-size: cover;
-    background-position: center;
     padding: var(--space-24) 0;
     overflow: hidden;
+}
+
+.bgWrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
 .overlay {

@@ -24,7 +24,10 @@
     --space-8: 2rem;
     --space-12: 3rem;
     --space-16: 4rem;
+    --space-20: 5rem;
     --space-24: 6rem;
+
+    --blue-gradient: linear-gradient(135deg, #0056b3, #1e40af);
 
     /* Border Radius */
     --radius-sm: 6px;

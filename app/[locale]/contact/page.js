@@ -65,7 +65,7 @@ export default function ContactPage() {
                                     <div className={styles.infoContent}>
                                         <h4>{t('info.email.title')}</h4>
                                         <p>contact@amelcorp.com</p>
-                                        <p>support@amelcorp.com</p>
+                                        <p>partners@amelcorp.com</p>
                                     </div>
                                 </div>
 
@@ -75,24 +75,27 @@ export default function ContactPage() {
                                     </div>
                                     <div className={styles.infoContent}>
                                         <h4>{t('info.phone.title')}</h4>
-                                        <p>+1 (555) 123-4567</p>
+                                        <p>+1 713 300 8727</p>
+                                        <p>+1 866 439 2660 (Toll-Free)</p>
                                         <p style={{ color: 'var(--slate-400)', fontSize: '0.75rem', marginTop: '0.25rem' }}>{t('info.phone.hours')}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        {/* 
                         <div className={styles.inquiriesCard}>
                             <h3>{t('inquiries.title')}</h3>
                             <p>{t('inquiries.desc')} <a href="mailto:partners@amelcorp.com" className="text-blue-600 underline">partners@amelcorp.com</a></p>
                             <div className={styles.person}>
-                                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/16e7134a42-9ff90d7b6139599375bb.png" alt={t('inquiries.person.name')} className={styles.personImg} />
+                                <img src="/assets/team/steeve.png" alt={t('inquiries.person.name')} className={styles.personImg} />
                                 <div className={styles.personInfo}>
                                     <p>{t('inquiries.person.name')}</p>
                                     <p>{t('inquiries.person.role')}</p>
                                 </div>
                             </div>
                         </div>
+                        */}
                     </aside>
 
                     {/* Right Column */}

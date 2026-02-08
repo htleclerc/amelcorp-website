@@ -1,6 +1,6 @@
 {
     "Common": {
-        "companyName": "Amelcorp Logistics",
+        "companyName": "Amelcorp Logistics Inc",
         "bookConsultation": "Book Consultation",
         "learnMore": "Learn More",
         "getStarted": "Get Started",
@@ -19,7 +19,47 @@
         "title": "Sourcing Intelligence,<br></br> <highlight>Not Just Logistics.</highlight>",
         "description": "AMELCORP LOGISTICS helps U.S. businesses identify, verify, and work with reliable international manufacturers. We reduce the risk of global trade through rigorous sourcing, compliance management, and execution.",
         "primaryCta": "Book a $199 Global Trade Consultation",
-        "secondaryCta": "Explore Services"
+        "secondaryCta": "Explore Services",
+        "stats": {
+            "verified": {
+                "title": "Verified Suppliers",
+                "sub": "Strict background checks"
+            },
+            "risk": {
+                "title": "Risk Reduction",
+                "sub": "Contracts & QC"
+            },
+            "reach": {
+                "title": "Global Reach",
+                "sub": "China, UAE, Turkey..."
+            }
+        },
+        "pipeline": {
+            "title": "Sourcing Pipeline",
+            "status": "Active",
+            "savings": {
+                "label": "Avg Savings",
+                "sub": "on landed costs vs domestic sourcing."
+            },
+            "steps": {
+                "identification": {
+                    "title": "Supplier Identification",
+                    "desc": "Found 12 manufacturers. 3 short-listed matching specs."
+                },
+                "audit": {
+                    "title": "Verification & Audit",
+                    "desc": "2 factories passed Level 2 audit. Licenses verified."
+                },
+                "samples": {
+                    "title": "Sample Coordination",
+                    "desc": "Samples shipped via DHL Express. ETA: 3 Days."
+                },
+                "production": {
+                    "title": "Contract & Production",
+                    "desc": "Waiting for sample approval."
+                }
+            }
+        }
     },
     "Footer": {
         "ctaTitle": "Ready to Source Smarter?",
@@ -504,7 +544,7 @@
             "title": "Contact Information",
             "headquarters": {
                 "title": "Headquarters",
-                "address": "350 Fifth Avenue, Suite 7820\nNew York, NY 10118\nUnited States"
+                "address": "3050 Post Oak Blvd, Suite 510\nHouston, TX 77056\nUnited States"
             },
             "email": {
                 "title": "Email"
@@ -518,7 +558,7 @@
             "title": "General Inquiries",
             "desc": "For partnership proposals or press, please email us directly at",
             "person": {
-                "name": "Sarah Jenkins",
+                "name": "Steeve Spencer",
                 "role": "Director of Client Relations"
             }
         },
@@ -1267,7 +1307,7 @@
             "btn": "Discuss Product Access ($199)",
             "request": "Request a Category Preview List",
             "testimonial": {
-                "author": "Sarah Jenkins",
+                "author": "Steeve Spencer",
                 "role": "Founder, LuxeHome Decor",
                 "quote": "\"Amelcorp connected us with a verified packaging manufacturer in Dubai. The quality exceeded expectations, and we had full white-label control. This isn't dropshipping—it's real supply chain partnership.\"",
                 "date": "March 2025"

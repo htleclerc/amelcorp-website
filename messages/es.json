@@ -1,6 +1,6 @@
 {
     "Common": {
-        "companyName": "Amelcorp Logistics",
+        "companyName": "Amelcorp Logistics Inc",
         "bookConsultation": "Reservar consulta",
         "learnMore": "Saber más",
         "getStarted": "Empezar",
@@ -19,7 +19,47 @@
         "title": "Inteligencia de Sourcing,<br></br> <highlight>No solo Logística.</highlight>",
         "description": "AMELCORP LOGISTICS ayuda a las empresas estadounidenses a identificar, verify y trabajar con fabricantes internacionales confiables. Reducimos el riesgo del comercio global mediante un abastecimiento riguroso, gestión de cumplimiento y ejecución.",
         "primaryCta": "Reservar consulta de comercio global por $199",
-        "secondaryCta": "Explorar Servicios"
+        "secondaryCta": "Explorar Servicios",
+        "stats": {
+            "verified": {
+                "title": "Proveedores Verificados",
+                "sub": "Verificaciones rigurosas"
+            },
+            "risk": {
+                "title": "Reducción de Riesgos",
+                "sub": "Contratos y QC"
+            },
+            "reach": {
+                "title": "Alcance Global",
+                "sub": "China, EAU, Turquía..."
+            }
+        },
+        "pipeline": {
+            "title": "Pipeline de Sourcing",
+            "status": "Activo",
+            "savings": {
+                "label": "Ahorro Promedio",
+                "sub": "en costos entregados vs sourcing nacional."
+            },
+            "steps": {
+                "identification": {
+                    "title": "Identificación del Proveedor",
+                    "desc": "12 fabricantes encontrados. 3 preseleccionados según especificaciones."
+                },
+                "audit": {
+                    "title": "Verificación y Auditoría",
+                    "desc": "2 fábricas superaron la auditoría de Nivel 2. Licencias verificadas."
+                },
+                "samples": {
+                    "title": "Coordinación de Muestras",
+                    "desc": "Muestras enviadas por DHL Express. ETA: 3 días."
+                },
+                "production": {
+                    "title": "Contrato y Producción",
+                    "desc": "Esperando aprobación de la muestra."
+                }
+            }
+        }
     },
     "Footer": {
         "ctaTitle": "¿Listo para abastecerse de manera más inteligente?",
@@ -503,7 +543,7 @@
             "title": "Información de contacto",
             "headquarters": {
                 "title": "Sede Central",
-                "address": "350 Fifth Avenue, Suite 7820\nNew York, NY 10118\nEstados Unidos"
+                "address": "3050 Post Oak Blvd, Suite 510\nHouston, TX 77056\nEstados Unidos"
             },
             "email": {
                 "title": "Correo electrónico"
@@ -517,7 +557,7 @@
             "title": "Consultas Generales",
             "desc": "Para propuestas de asociación o prensa, envíenos un correo directamente a",
             "person": {
-                "name": "Sarah Jenkins",
+                "name": "Steeve Spencer",
                 "role": "Directora de Relaciones con el Cliente"
             }
         },
@@ -1257,7 +1297,7 @@
             "btn": "Discutir Acceso ($199)",
             "request": "Pedir Vista Previa",
             "testimonial": {
-                "author": "Sarah Jenkins",
+                "author": "Steeve Spencer",
                 "role": "Fundadora, LuxeHome Decor",
                 "quote": "\"Acceso real y control total. Esto no es dropshipping, es una asociación de cadena de suministro real.\"",
                 "date": "Marzo 2025"

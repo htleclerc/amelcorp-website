@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CTASection from '@/components/CTASection';
 import styles from './services.module.css';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
@@ -222,19 +223,14 @@ export default function ServicesOverview() {
                 </section>
 
                 {/* CTA Section */}
-                <section className={styles.ctaSection}>
-                    <div className="container">
-                        <h2 className={styles.ctaTitle}>{t('cta.title')}</h2>
-                        <p className={styles.ctaDesc}>
-                            {t('cta.desc')}
-                        </p>
-                        <Link href="/book" className={styles.btnCTA}>
-                            <span>{t('cta.btn')}</span>
-                            <i className="fas fa-calendar-check"></i>
-                        </Link>
-                        <p className={styles.ctaNote}>{t('cta.note')}</p>
-                    </div>
-                </section>
+                <CTASection
+                    title={t('cta.title')}
+                    desc={t('cta.desc')}
+                    primaryCtaText={t('cta.btn')}
+                    primaryCtaLink="/book"
+                    note={t('cta.note')}
+                    variant="blue"
+                />
             </main>
 
             <Footer />

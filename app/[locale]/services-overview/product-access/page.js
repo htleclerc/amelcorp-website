@@ -1,5 +1,6 @@
 import Header from '../../../../components/Header';
 import Footer from '../../../../components/Footer';
+import CTASection from '@/components/CTASection';
 import styles from './access.module.css';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
@@ -346,22 +347,15 @@ export default function ProductAccessService() {
                 </section>
 
                 {/* Final CTA Section */}
-                <section className={styles.finalCta}>
-                    <div className="container">
-                        <h2 className={styles.ctaTitle}>{t('footer.title')}</h2>
-                        <p className={styles.ctaDesc}>
-                            {t('footer.desc')}
-                        </p>
-                        <div className={styles.ctaActions}>
-                            <Link href="/book" className={styles.btnLargeRed}>
-                                {t('footer.btn')} <i className="fa-solid fa-arrow-right"></i>
-                            </Link>
-                            <Link href="#preview" className={styles.btnOutline}>
-                                {t('footer.request')}
-                            </Link>
-                        </div>
-                    </div>
-                </section>
+                <CTASection
+                    title={t('footer.title')}
+                    desc={t('footer.desc')}
+                    primaryCtaText={t('footer.btn')}
+                    primaryCtaLink="/book"
+                    secondaryCtaText={t('footer.request')}
+                    secondaryCtaLink="#preview"
+                    variant="blue"
+                />
             </main>
 
             <Footer />

@@ -1,5 +1,6 @@
 import Header from '../../../../components/Header';
 import Footer from '../../../../components/Footer';
+import CTASection from '@/components/CTASection';
 import styles from './sourcing.module.css';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
@@ -210,24 +211,15 @@ export default function SourcingService() {
                 </section>
 
                 {/* Bottom CTA Strip */}
-                <section className={styles.bottomCta}>
-                    <div className="container">
-                        <div className={styles.ctaFlex}>
-                            <div>
-                                <h3 className={styles.ctaTitle}>{t('footerCta.title')}</h3>
-                                <p className={styles.ctaDesc}>{t('footerCta.desc')}</p>
-                            </div>
-                            <div className={styles.ctaButtons}>
-                                <Link href="/services-overview" className={styles.btnSecondary}>
-                                    {t('footerCta.viewOther')}
-                                </Link>
-                                <Link href="/book" className={styles.btnSmallRed}>
-                                    {t('footerCta.bookNow')} <i className="fa-solid fa-arrow-right"></i>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <CTASection
+                    title={t('footerCta.title')}
+                    desc={t('footerCta.desc')}
+                    primaryCtaText={t('footerCta.bookNow')}
+                    primaryCtaLink="/book"
+                    secondaryCtaText={t('footerCta.viewOther')}
+                    secondaryCtaLink="/services-overview"
+                    variant="horizontal"
+                />
             </main>
 
             <Footer />

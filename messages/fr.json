@@ -1,6 +1,6 @@
 {
     "Common": {
-        "companyName": "Amelcorp Logistics",
+        "companyName": "Amelcorp Logistics Inc",
         "bookConsultation": "Réserver une consultation",
         "learnMore": "En savoir plus",
         "getStarted": "Démarrer",
@@ -19,7 +19,47 @@
         "title": "Intelligence de Sourcing,<br></br> <highlight>Pas seulement Logistique.</highlight>",
         "description": "AMELCORP LOGISTICS aide les entreprises américaines à identifier, vérifier et travailler avec des fabricants internationaux fiables. Nous réduisons les risques du commerce mondial grâce à un sourcing rigoureux, une gestion de la conformité et une exécution précise.",
         "primaryCta": "Réserver une consultation stratégique à 199 $",
-        "secondaryCta": "Explorer les Services"
+        "secondaryCta": "Explorer les Services",
+        "stats": {
+            "verified": {
+                "title": "Fournisseurs Vérifiés",
+                "sub": "Vérifications rigoureuses"
+            },
+            "risk": {
+                "title": "Réduction des Risques",
+                "sub": "Contrats et QC"
+            },
+            "reach": {
+                "title": "Portée Mondiale",
+                "sub": "Chine, EAU, Turquie..."
+            }
+        },
+        "pipeline": {
+            "title": "Pipeline de Sourcing",
+            "status": "Actif",
+            "savings": {
+                "label": "Économies Moyennes",
+                "sub": "sur les coûts rendus vs sourcing domestique."
+            },
+            "steps": {
+                "identification": {
+                    "title": "Identification du Fournisseur",
+                    "desc": "12 fabricants trouvés. 3 pré-sélectionnés selon les specs."
+                },
+                "audit": {
+                    "title": "Vérification et Audit",
+                    "desc": "2 usines ont réussi l'audit de niveau 2. Licences vérifiées."
+                },
+                "samples": {
+                    "title": "Coordination des Échantillons",
+                    "desc": "Échantillons expédiés via DHL Express. ETA : 3 jours."
+                },
+                "production": {
+                    "title": "Contrat et Production",
+                    "desc": "En attente de l'approbation de l'échantillon."
+                }
+            }
+        }
     },
     "Footer": {
         "ctaTitle": "Prêt à sourcer plus intelligemment ?",
@@ -504,7 +544,7 @@
             "title": "Informations de Contact",
             "headquarters": {
                 "title": "Siège Social",
-                "address": "350 Fifth Avenue, Suite 7820\nNew York, NY 10118\nÉtats-Unis"
+                "address": "3050 Post Oak Blvd, Suite 510\nHouston, TX 77056\nÉtats-Unis"
             },
             "email": {
                 "title": "Email"
@@ -518,7 +558,7 @@
             "title": "Demandes Générales",
             "desc": "Pour des propositions de partenariat ou de presse, veuillez nous envoyer un e-mail directement à",
             "person": {
-                "name": "Sarah Jenkins",
+                "name": "Steeve Spencer",
                 "role": "Directrice des Relations Clients"
             }
         },
@@ -1258,7 +1298,7 @@
             "btn": "Discuter Accès Produit (199 $)",
             "request": "Demander aperçu du catalogue",
             "testimonial": {
-                "author": "Sarah Jenkins",
+                "author": "Steeve Spencer",
                 "role": "Fondatrice, LuxeHome Decor",
                 "quote": "\"Amelcorp nous a mis en relation avec un fabricant à Dubaï. La qualité a dépassé les attentes et nous avons eu un contrôle total sur la marque blanche. Ce n'est pas du dropshipping — c'est un vrai partenariat.\"",
                 "date": "Mars 2025"

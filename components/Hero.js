@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import Image from 'next/image';
+import { Link } from '@/i18n/navigation';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -7,6 +8,17 @@ const Hero = () => {
 
     return (
         <section className={styles.hero}>
+            {/* Background Image using Next.js Image for optimization */}
+            <div className={styles.bgWrapper}>
+                <Image
+                    src="/assets/hero_bg.png"
+                    alt="Global Sourcing Background"
+                    fill
+                    priority
+                    quality={85}
+                    style={{ objectFit: 'cover' }}
+                />
+            </div>
             <div className={styles.overlay}></div>
             <div className={`container ${styles.container}`}>
                 <div className={styles.content}>
@@ -33,22 +45,22 @@ const Hero = () => {
                         <div className={styles.statItem}>
                             <span className={styles.icon}>🛡️</span>
                             <div>
-                                <strong>Verified Suppliers</strong>
-                                <span className={styles.statSub}>Strict background checks</span>
+                                <strong>{t('stats.verified.title')}</strong>
+                                <span className={styles.statSub}>{t('stats.verified.sub')}</span>
                             </div>
                         </div>
                         <div className={styles.statItem}>
                             <span className={styles.icon}>📄</span>
                             <div>
-                                <strong>Risk Reduction</strong>
-                                <span className={styles.statSub}>Contracts & QC</span>
+                                <strong>{t('stats.risk.title')}</strong>
+                                <span className={styles.statSub}>{t('stats.risk.sub')}</span>
                             </div>
                         </div>
                         <div className={styles.statItem}>
                             <span className={styles.icon}>🌍</span>
                             <div>
-                                <strong>Global Reach</strong>
-                                <span className={styles.statSub}>China, UAE, Turkey...</span>
+                                <strong>{t('stats.reach.title')}</strong>
+                                <span className={styles.statSub}>{t('stats.reach.sub')}</span>
                             </div>
                         </div>
                     </div>
@@ -57,39 +69,39 @@ const Hero = () => {
                 <div className={styles.cardContainer}>
                     <div className={styles.pipelineCard}>
                         <div className={styles.cardHeader}>
-                            <h3>Sourcing Pipeline</h3>
-                            <span className={styles.statusBadge}>Active</span>
+                            <h3>{t('pipeline.title')}</h3>
+                            <span className={styles.statusBadge}>{t('pipeline.status')}</span>
                         </div>
 
                         <ul className={styles.stepList}>
                             <li className={styles.stepItem}>
                                 <div className={styles.stepIcon}>🔍</div>
                                 <div className={styles.stepContent}>
-                                    <strong>Supplier Identification</strong>
-                                    <p>Found 12 manufacturers. 3 short-listed matching specs.</p>
+                                    <strong>{t('pipeline.steps.identification.title')}</strong>
+                                    <p>{t('pipeline.steps.identification.desc')}</p>
                                 </div>
                                 <div className={styles.check}>✔</div>
                             </li>
                             <li className={styles.stepItem}>
                                 <div className={styles.stepIcon}>👥</div>
                                 <div className={styles.stepContent}>
-                                    <strong>Verification & Audit</strong>
-                                    <p>2 factories passed Level 2 audit. Licenses verified.</p>
+                                    <strong>{t('pipeline.steps.audit.title')}</strong>
+                                    <p>{t('pipeline.steps.audit.desc')}</p>
                                 </div>
                                 <div className={styles.check}>✔</div>
                             </li>
                             <li className={styles.stepItemActive}>
                                 <div className={styles.stepIcon}>📦</div>
                                 <div className={styles.stepContent}>
-                                    <strong>Sample Coordination</strong>
-                                    <p>Samples shipped via DHL Express. ETA: 3 Days.</p>
+                                    <strong>{t('pipeline.steps.samples.title')}</strong>
+                                    <p>{t('pipeline.steps.samples.desc')}</p>
                                 </div>
                             </li>
                             <li className={styles.stepItemPending}>
                                 <div className={styles.stepIcon}>▶</div>
                                 <div className={styles.stepContent}>
-                                    <strong>Contract & Production</strong>
-                                    <p>Waiting for sample approval.</p>
+                                    <strong>{t('pipeline.steps.production.title')}</strong>
+                                    <p>{t('pipeline.steps.production.desc')}</p>
                                 </div>
                             </li>
                         </ul>
@@ -97,9 +109,9 @@ const Hero = () => {
                         <div className={styles.savingsCard}>
                             <div className={styles.savingsIcon}>📉</div>
                             <div className={styles.savingsText}>
-                                <strong>Avg Savings</strong>
+                                <strong>{t('pipeline.savings.label')}</strong>
                                 <div className={styles.savingsValue}>18-25%</div>
-                                <p>on landed costs vs domestic sourcing.</p>
+                                <p>{t('pipeline.savings.sub')}</p>
                             </div>
                         </div>
                     </div>
