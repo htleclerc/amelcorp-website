@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Open_Sans, Merriweather } from "next/font/google";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "../globals.css";
 
 const openSans = Open_Sans({
@@ -34,6 +35,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
