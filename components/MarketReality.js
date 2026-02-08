@@ -22,25 +22,37 @@ const MarketReality = () => {
 
                 <div className={styles.cards}>
                     <div className={styles.card}>
-                        <div className={styles.icon}>🚫</div>
-                        <h3 className={styles.cardTitle}>{t('fraudTitle')}</h3>
-                        <p className={styles.cardText}>
-                            {t('fraudText')}
-                        </p>
+                        <div className={styles.cardHeader}>
+                            <div className={styles.icon}>🚫</div>
+                            <h3 className={styles.cardTitle}>{t('fraudTitle')}</h3>
+                        </div>
+                        <div className={styles.cardBody}>
+                            <p className={styles.cardText}>
+                                {t('fraudText')}
+                            </p>
+                        </div>
                     </div>
                     <div className={styles.card}>
-                        <div className={styles.icon}>⚠️</div>
-                        <h3 className={styles.cardTitle}>{t('qualityTitle')}</h3>
-                        <p className={styles.cardText}>
-                            {t('qualityText')}
-                        </p>
+                        <div className={styles.cardHeader}>
+                            <div className={styles.icon}>⚠️</div>
+                            <h3 className={styles.cardTitle}>{t('qualityTitle')}</h3>
+                        </div>
+                        <div className={styles.cardBody}>
+                            <p className={styles.cardText}>
+                                {t('qualityText')}
+                            </p>
+                        </div>
                     </div>
                     <div className={styles.card}>
-                        <div className={styles.icon}>📦</div>
-                        <h3 className={styles.cardTitle}>{t('customsTitle')}</h3>
-                        <p className={styles.cardText}>
-                            {t('customsText')}
-                        </p>
+                        <div className={styles.cardHeader}>
+                            <div className={styles.icon}>📦</div>
+                            <h3 className={styles.cardTitle}>{t('customsTitle')}</h3>
+                        </div>
+                        <div className={styles.cardBody}>
+                            <p className={styles.cardText}>
+                                {t('customsText')}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

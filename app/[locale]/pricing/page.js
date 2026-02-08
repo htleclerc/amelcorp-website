@@ -17,9 +17,7 @@ export default function PricingPage() {
                     <div className={styles.container}>
                         <span className={styles.badge}>{t('hero.badge')}</span>
                         <h1 className={styles.heroTitle}>
-                            {t.rich('hero.title', {
-                                br: () => <br />
-                            })}
+                            {t('hero.title')}
                         </h1>
                         <p className={styles.heroDesc}>
                             {t('hero.desc')}
@@ -155,7 +153,7 @@ export default function PricingPage() {
                 {/* Add-Ons */}
                 <section className={styles.addonsSection}>
                     <div className={styles.container}>
-                        <h2 className={`${styles.stepTitle} mb-8`}>{t('addons.title')}</h2>
+                        <h2 className={`${styles.stepTitle} ${styles.sectionHeaderCentered}`}>{t('addons.title')}</h2>
 
                         <div className={styles.addonsGrid}>
                             {t.raw('addons.items').map((addon, idx) => (
@@ -177,7 +175,7 @@ export default function PricingPage() {
                 {/* Pricing Factors */}
                 <section className={styles.logicSection}>
                     <div className={styles.container}>
-                        <h2 className={`${styles.stepTitle} text-center mb-12`}>{t('factors.title')}</h2>
+                        <h2 className={`${styles.stepTitle} ${styles.sectionHeaderCentered}`}>{t('factors.title')}</h2>
 
                         <div className={styles.logicGrid}>
                             {t.raw('factors.items').map((factor, idx) => (

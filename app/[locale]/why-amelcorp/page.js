@@ -20,7 +20,6 @@ export default function WhyAmelcorpPage() {
                                 <span className={styles.badge}>{t('hero.badge')}</span>
                                 <h1 className={styles.heroTitle}>
                                     {t.rich('hero.title', {
-                                        br: () => <br />,
                                         highlight: (chunks) => <span className={styles.highlight}>{chunks}</span>
                                     })}
                                 </h1>

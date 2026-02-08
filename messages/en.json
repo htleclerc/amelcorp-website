@@ -16,7 +16,7 @@
     },
     "Hero": {
         "badge": "Global Trade Enablement",
-        "title": "Sourcing Intelligence,<br /> <highlight>Not Just Logistics.</highlight>",
+        "title": "Sourcing Intelligence,<br></br> <highlight>Not Just Logistics.</highlight>",
         "description": "AMELCORP LOGISTICS helps U.S. businesses identify, verify, and work with reliable international manufacturers. We reduce the risk of global trade through rigorous sourcing, compliance management, and execution.",
         "primaryCta": "Book a $199 Global Trade Consultation",
         "secondaryCta": "Explore Services"
@@ -31,6 +31,7 @@
         "supplierSourcing": "Supplier Sourcing",
         "tradeManagement": "Trade Management",
         "qualityControl": "Quality Control",
+        "productAccess": "Product Access",
         "industriesTitle": "Industries",
         "electronics": "Electronics",
         "beauty": "Beauty & Cosmetics",
@@ -42,7 +43,7 @@
     },
     "MarketReality": {
         "label": "MARKET REALITY",
-        "title": "You don't need \"cheap\".<br />You need reliable.",
+        "title": "You don't need \"cheap\". You need reliable.",
         "description": "The era of easy dropshipping is over. Today's market demands quality, transparency, and speed. Relying on unverified suppliers on generic marketplaces is a gamble your business can't afford. AMELCORP LOGISTICS ensures your supply chain is built on trust.",
         "riskLink": "See how we mitigate risk ➔",
         "fraudTitle": "Fraud & Scams",
@@ -346,7 +347,7 @@
     "WhyAmelcorp": {
         "hero": {
             "badge": "Trust & Execution",
-            "title": "We Don't Just Move Goods.<br /> <highlight>We Verify Everything.</highlight>",
+            "title": "We Don't Just Move Goods. <highlight>We Verify Everything.</highlight>",
             "desc": "In a market flooded with \"cheap\" options and hidden risks, Amelcorp stands for radical transparency, rigorous verification, and documentation discipline. We are your eyes and ears on the ground.",
             "trust": [
                 "Fraud Protection",
@@ -587,7 +588,7 @@
     "Pricing": {
         "hero": {
             "badge": "Transparent Engagement Model",
-            "title": "Invest in Certainty.<br />Not Hidden Fees.",
+            "title": "Invest in Certainty. Not Hidden Fees.",
             "desc": "We don't hide margin in shipping rates. We charge professional fees for professional trade execution. Clear, upfront, and ROI-focused."
         },
         "strategy": {
@@ -820,7 +821,7 @@
     "ServicesSourcing": {
         "hero": {
             "badge": "Flagship Service",
-            "title": "Find Verified Manufacturers.<br /> <highlight>Reduce Risk.</highlight> Scale with Confidence.",
+            "title": "Find Verified Manufacturers.<br></br> <highlight>Reduce Risk.</highlight> Scale with Confidence.",
             "desc": "We eliminate sourcing uncertainty by identifying, verifying, and negotiating with production-ready manufacturers in China, Dubai, and Turkey. Get the right partner, not just the cheapest quote.",
             "btn": "Book a $199 Sourcing Consultation",
             "verified": "100% Verified Suppliers"
@@ -919,8 +920,16 @@
             "pricing": {
                 "title": "Pricing Model",
                 "desc": "Transparent project fee + success fee.",
-                "sourcingFee": "Sourcing Fee",
-                "successFee": "Success Fee",
+                "fees": [
+                    {
+                        "label": "Sourcing Fee",
+                        "value": "Project Based"
+                    },
+                    {
+                        "label": "Success Fee",
+                        "value": "% of Order"
+                    }
+                ],
                 "btn": "Book Consultation ($199)",
                 "note": "*Consultation fee credited towards first project invoice."
             },
@@ -930,7 +939,7 @@
                 "role": "CEO, TechAccessories Inc."
             }
         },
-        "footer": {
+        "footerCta": {
             "title": "Ready to secure your supply chain?",
             "desc": "Start with a feasibility consultation to map out your sourcing strategy.",
             "viewOther": "View Other Services",
@@ -940,7 +949,7 @@
     "ServicesRetainer": {
         "hero": {
             "badge": "Monthly Retainer Service",
-            "title": "Your Outsourced<br /> <highlight>Global Trade Team.</highlight>",
+            "title": "Your Outsourced<br></br> <highlight>Global Trade Team.</highlight>",
             "desc": "Managing international suppliers is time-consuming and risky. We act as your dedicated trade management partner—handling supplier communication, purchase orders, documentation, and shipping coordination so you can focus on growth.",
             "btn": "Schedule a Trade Management Consultation"
         },
@@ -1049,7 +1058,7 @@
     "ServicesAudit": {
         "hero": {
             "badge": "Risk Mitigation & Quality Assurance",
-            "title": "Verify Before<br /> <highlight>You Commit.</highlight>",
+            "title": "Verify Before<br></br> <highlight>You Commit.</highlight>",
             "desc": "Don't rely on photos sent by the factory. We coordinate on-the-ground supplier audits and quality control inspections to protect your investment, ensuring you only pay for products that meet your specifications.",
             "btn": "Schedule QC Consultation"
         },
@@ -1162,7 +1171,7 @@
     "ServicesProduct": {
         "hero": {
             "badge": "Curated Global Store",
-            "title": "Direct-from-Manufacturer<br /> <highlight>Product Access</highlight>",
+            "title": "Direct-from-Manufacturer<br></br> <highlight>Product Access</highlight>",
             "desc": "Gain exclusive access to a curated catalog of verified, high-margin products. No dropshipping chaos, no unknown suppliers—just direct lines to manufacturers we've personally vetted for quality and reliability.",
             "btn": "Discuss Product Access",
             "request": "Request Category List"

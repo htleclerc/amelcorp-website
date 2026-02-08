@@ -109,6 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.1rem;
     transition: var(--transition-fast);
 }
 
@@ -130,7 +131,22 @@
 }
 
 .linkList li {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--text-light);
+}
+
+.contactIcon {
+    width: 24px;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .linkList a {
@@ -149,7 +165,7 @@
     color: var(--text-light);
 }
 
-.copyright .container {
+.copyrightContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,6 +174,29 @@
 .legalLinks {
     display: flex;
     gap: var(--space-6);
+}
+
+.legalLinks a {
+    color: var(--white);
+    transition: var(--transition-fast);
+}
+
+.legalLinks a:hover {
+    color: var(--primary-red);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .copyrightContainer {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-4);
+    }
+
+    .legalLinks {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
 }
 
 @media (max-width: 1024px) {

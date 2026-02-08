@@ -395,8 +395,13 @@
 
 /* Add-Ons */
 .addonsSection {
-    padding: 5rem 0;
+    padding: 6rem 0;
     background: var(--white);
+}
+
+.sectionHeaderCentered {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .addonsGrid {
@@ -473,7 +478,7 @@
 
 /* Logic Factors */
 .logicSection {
-    padding: 5rem 0;
+    padding: 6rem 0;
     background: var(--slate-50);
 }
 
@@ -506,11 +511,16 @@
     font-weight: 700;
     color: var(--slate-800);
     margin-bottom: 0.25rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .factorDesc {
     font-size: 0.75rem;
     color: var(--slate-600);
+    min-height: 2.5rem;
 }
 
 /* CTA */

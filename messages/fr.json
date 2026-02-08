@@ -16,7 +16,7 @@
     },
     "Hero": {
         "badge": "Enablement du Commerce Global",
-        "title": "Intelligence de Sourcing,<br /> <highlight>Pas seulement Logistique.</highlight>",
+        "title": "Intelligence de Sourcing,<br></br> <highlight>Pas seulement Logistique.</highlight>",
         "description": "AMELCORP LOGISTICS aide les entreprises américaines à identifier, vérifier et travailler avec des fabricants internationaux fiables. Nous réduisons les risques du commerce mondial grâce à un sourcing rigoureux, une gestion de la conformité et une exécution précise.",
         "primaryCta": "Réserver une consultation stratégique à 199 $",
         "secondaryCta": "Explorer les Services"
@@ -31,6 +31,7 @@
         "supplierSourcing": "Sourcing de Fournisseurs",
         "tradeManagement": "Gestion Commerciale",
         "qualityControl": "Contrôle Qualité",
+        "productAccess": "Accès Produits",
         "industriesTitle": "Industries",
         "electronics": "Électronique",
         "beauty": "Beauté & Cosmétiques",
@@ -42,7 +43,7 @@
     },
     "MarketReality": {
         "label": "RÉALITÉ DU MARCHÉ",
-        "title": "Vous n'avez pas besoin de \"pas cher\".<br />Vous avez besoin de fiabilité.",
+        "title": "Vous n'avez pas besoin de \"pas cher\". Vous avez besoin de fiabilité.",
         "description": "L'ère du dropshipping facile est révolue. Le marché d'aujourd'hui exige qualité, transparence et rapidité. Se fier à des fournisseurs non vérifiés sur des places de marché génériques est un pari que votre entreprise ne peut pas se permettre. AMELCORP LOGISTICS garantit que votre chaîne d'approvisionnement repose sur la confiance.",
         "riskLink": "Voyez comment nous atténuons les risques ➔",
         "fraudTitle": "Fraude et Escroqueries",
@@ -346,7 +347,7 @@
     "WhyAmelcorp": {
         "hero": {
             "badge": "Confiance & Exécution",
-            "title": "Nous ne déplaçons pas seulement des marchandises.<br /> <highlight>Nous vérifions tout.</highlight>",
+            "title": "Nous ne déplaçons pas seulement des marchandises. <highlight>Nous vérifions tout.</highlight>",
             "desc": "Dans un marché inondé d'options \"bon marché\" et de risques cachés, Amelcorp prône la transparence radicale, la vérification rigoureuse et la discipline documentaire. Nous sommes vos yeux et vos oreilles sur le terrain.",
             "trust": [
                 "Protection contre la fraude",
@@ -587,7 +588,7 @@
     "Pricing": {
         "hero": {
             "badge": "Modèle d'Engagement Transparent",
-            "title": "Investissez dans la Certitude.<br />Pas dans les Frais Cachés.",
+            "title": "Investissez dans la Certitude. Pas dans les Frais Cachés.",
             "desc": "Nous ne cachons pas de marge dans les tarifs d'expédition. Nous facturons des honoraires professionnels pour une exécution commerciale professionnelle. Clair, direct et axé sur le ROI."
         },
         "strategy": {
@@ -811,7 +812,7 @@
     "ServicesSourcing": {
         "hero": {
             "badge": "Service Phare",
-            "title": "Trouvez des Fabricants Vérifiés.<br /> <highlight>Réduisez les Risques.</highlight> Développez-vous en toute confiance.",
+            "title": "Trouvez des Fabricants Vérifiés.<br></br> <highlight>Réduisez les Risques.</highlight> Développez-vous en toute confiance.",
             "desc": "Nous éliminons l'incertitude du sourcing en identifiant, vérifiant et négociant avec des fabricants prêts pour la production en Chine, à Dubaï et en Turquie. Obtenez le bon partenaire, pas seulement le devis le moins cher.",
             "btn": "Réserver une consultation de sourcing à 199 $",
             "verified": "Fournisseurs 100% vérifiés"
@@ -910,8 +911,16 @@
             "pricing": {
                 "title": "Modèle de Tarification",
                 "desc": "Frais de projet transparents + commission de succès.",
-                "sourcingFee": "Frais de sourcing",
-                "successFee": "Commission de succès",
+                "fees": [
+                    {
+                        "label": "Frais de sourcing",
+                        "value": "Sur devis"
+                    },
+                    {
+                        "label": "Commission de succès",
+                        "value": "% de la commande"
+                    }
+                ],
                 "btn": "Réserver consultation (199 $)",
                 "note": "*Les frais de consultation sont crédités sur la première facture du projet."
             },
@@ -921,7 +930,7 @@
                 "role": "CEO, TechAccessories Inc."
             }
         },
-        "footer": {
+        "footerCta": {
             "title": "Prêt à sécuriser votre chaîne d'approvisionnement ?",
             "desc": "Commencez par une consultation de faisabilité pour tracer votre stratégie de sourcing.",
             "viewOther": "Voir les autres services",
@@ -931,7 +940,7 @@
     "ServicesRetainer": {
         "hero": {
             "badge": "Service de Forfait Mensuel",
-            "title": "Votre Équipe Externalisée<br /> <highlight>de Commerce Global.</highlight>",
+            "title": "Votre Équipe Externalisée<br></br> <highlight>de Commerce Global.</highlight>",
             "desc": "Gérer des fournisseurs internationaux prend du temps et est risqué. Nous agissons comme votre partenaire dédié à la gestion commerciale — gérant la communication, les bons de commande, la documentation et la logistique pour que vous puissiez vous concentrer sur votre croissance.",
             "btn": "Planifier une consultation de gestion commerciale"
         },
@@ -1040,7 +1049,7 @@
     "ServicesAudit": {
         "hero": {
             "badge": "Atténuation des Risques & Assurance Qualité",
-            "title": "Vérifiez Avant de<br /> <highlight>Vous Engager.</highlight>",
+            "title": "Vérifiez Avant de<br></br> <highlight>Vous Engager.</highlight>",
             "desc": "Ne vous fiez pas aux photos envoyées par l'usine. Nous coordonnons des audits de fournisseurs sur le terrain et des inspections de contrôle qualité pour protéger votre investissement, en veillant à ce que vous ne payiez que pour des produits conformes.",
             "btn": "Planifier une consultation QC"
         },
@@ -1153,7 +1162,7 @@
     "ServicesProduct": {
         "hero": {
             "badge": "Boutique Globale Organisée",
-            "title": "Accès Produits Direct<br /> <highlight>de l'Usine</highlight>",
+            "title": "Accès Produits Direct<br></br> <highlight>de l'Usine</highlight>",
             "desc": "Obtenez un accès exclusif à un catalogue organisé de produits vérifiés à forte marge. Pas de chaos de dropshipping, pas de fournisseurs inconnus — juste des lignes directes avec des fabricants que nous avons personnellement audités.",
             "btn": "Discuter de l'Accès Produits",
             "request": "Demander la liste des catégories"

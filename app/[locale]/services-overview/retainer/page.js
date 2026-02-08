@@ -28,8 +28,8 @@ export default function RetainerService() {
                                 </div>
                                 <h1 className={styles.heroTitle}>
                                     {t.rich('hero.title', {
-                                        br: () => <br />,
-                                        highlight: (chunks) => <span className={styles.heroTitleHighlight}>{chunks}</span>
+                                        highlight: (chunks) => <span className={styles.heroTitleHighlight}>{chunks}</span>,
+                                        br: (chunks) => <br />
                                     })}
                                 </h1>
                                 <p className={styles.heroDesc}>

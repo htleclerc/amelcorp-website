@@ -32,8 +32,12 @@ const Footer = ({ showCTA = false }) => {
                             {t('brandDesc')}
                         </p>
                         <div className={styles.socials}>
-                            <span className={styles.socialIcon}>in</span>
-                            <span className={styles.socialIcon}>tw</span>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LinkedIn">
+                                <i className="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="X">
+                                <i className="fa-brands fa-x-twitter"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -43,6 +47,7 @@ const Footer = ({ showCTA = false }) => {
                             <li><Link href="/services-overview/sourcing">{t('supplierSourcing')}</Link></li>
                             <li><Link href="/services-overview/retainer">{t('tradeManagement')}</Link></li>
                             <li><Link href="/services-overview/audit-qc">{t('qualityControl')}</Link></li>
+                            <li><Link href="/services-overview/product-access">{t('productAccess')}</Link></li>
                         </ul>
                     </div>
 
@@ -58,12 +63,12 @@ const Footer = ({ showCTA = false }) => {
                     <div className={styles.col}>
                         <h3>{t('contactTitle')}</h3>
                         <ul className={styles.linkList}>
-                            <li className="flex items-center gap-2">
-                                <i className="fa-solid fa-envelope text-blue-500"></i>
+                            <li className={styles.contactItem}>
+                                <i className={`fa-solid fa-envelope ${styles.contactIcon}`}></i>
                                 <span>contact@amelcorp.com</span>
                             </li>
-                            <li className="flex items-center gap-2">
-                                <i className="fa-solid fa-phone text-blue-500"></i>
+                            <li className={styles.contactItem}>
+                                <i className={`fa-solid fa-phone ${styles.contactIcon}`}></i>
                                 <span>+1 (555) 123-4567</span>
                             </li>
                         </ul>
@@ -72,7 +77,7 @@ const Footer = ({ showCTA = false }) => {
             </div>
 
             <div className={styles.copyright}>
-                <div className="container">
+                <div className={`container ${styles.copyrightContainer}`}>
                     <p>{t('copyright', { year: new Date().getFullYear() })}</p>
                     <div className={styles.legalLinks}>
                         <Link href="/privacy">{t('privacy')}</Link>

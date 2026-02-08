@@ -16,7 +16,7 @@
     },
     "Hero": {
         "badge": "Habilitación del Comercio Global",
-        "title": "Inteligencia de Sourcing,<br /> <highlight>No solo Logística.</highlight>",
+        "title": "Inteligencia de Sourcing,<br></br> <highlight>No solo Logística.</highlight>",
         "description": "AMELCORP LOGISTICS ayuda a las empresas estadounidenses a identificar, verify y trabajar con fabricantes internacionales confiables. Reducimos el riesgo del comercio global mediante un abastecimiento riguroso, gestión de cumplimiento y ejecución.",
         "primaryCta": "Reservar consulta de comercio global por $199",
         "secondaryCta": "Explorar Servicios"
@@ -31,6 +31,7 @@
         "supplierSourcing": "Búsqueda de Proveedores",
         "tradeManagement": "Gestión Comercial",
         "qualityControl": "Control de Calidad",
+        "productAccess": "Acceso a Productos",
         "industriesTitle": "Industrias",
         "electronics": "Electrónica",
         "beauty": "Belleza y Cosméticos",
@@ -42,7 +43,7 @@
     },
     "MarketReality": {
         "label": "REALIDAD DEL MERCADO",
-        "title": "No necesitas \"barato\".<br />Necesitas confiable.",
+        "title": "No necesitas \"barato\". Necesitas confiable.",
         "description": "La era del dropshipping fácil ha terminado. El mercado actual exige calidad, transparencia y rapidez. Confiar en proveedores no verificados en mercados genéricos es una apuesta que su negocio no puede permitirse. AMELCORP LOGISTICS garantiza que su cadena de suministro se base en la confianza.",
         "riskLink": "Vea cómo mitigamos el riesgo ➔",
         "fraudTitle": "Fraude y Estafas",
@@ -345,7 +346,7 @@
     "WhyAmelcorp": {
         "hero": {
             "badge": "Confianza y Ejecución",
-            "title": "No solo movemos mercancías.<br /> <highlight>Lo verificamos todo.</highlight>",
+            "title": "No solo movemos mercancías. <highlight>Lo verificamos todo.</highlight>",
             "desc": "En un mercado inundado de opciones \"baratas\" y riesgos ocultos, Amelcorp representa la transparencia radical, la verificación rigurosa y la disciplina documental. Somos sus ojos y oídos en el terreno.",
             "trust": [
                 "Protección contra fraude",
@@ -586,7 +587,7 @@
     "Pricing": {
         "hero": {
             "badge": "Modelo de Compromiso Transparente",
-            "title": "Invierta en Certeza.<br />No en Tarifas Ocultas.",
+            "title": "Invierta en Certeza. No en Tarifas Ocultas.",
             "desc": "No ocultamos márgenes en las tarifas de envío. Cobramos honorarios profesionales por una ejecución comercial profesional. Claro, directo y enfocado en el ROI."
         },
         "strategy": {
@@ -810,7 +811,7 @@
     "ServicesSourcing": {
         "hero": {
             "badge": "Servicio Destacado",
-            "title": "Encuentre Fabricantes Verificados.<br /> <highlight>Reduzca el Riesgo.</highlight> Escale con Confianza.",
+            "title": "Encuentre Fabricantes Verificados.<br></br> <highlight>Reduzca el Riesgo.</highlight> Escale con Confianza.",
             "desc": "Eliminamos la incertidumbre identificando, verificando y negociando con fabricantes en China, Dubái y Turquía. Consiga el socio adecuado, no solo el presupuesto más barato.",
             "btn": "Reservar consulta de $199",
             "verified": "Proveedores 100% Verificados"
@@ -909,8 +910,16 @@
             "pricing": {
                 "title": "Modelo de Precios",
                 "desc": "Tarifa de proyecto transparente + tarifa de éxito.",
-                "sourcingFee": "Tarifa de Sourcing",
-                "successFee": "Tarifa de Éxito",
+                "fees": [
+                    {
+                        "label": "Tarifa de Sourcing",
+                        "value": "Basado en Proyecto"
+                    },
+                    {
+                        "label": "Tarifa de Éxito",
+                        "value": "% del Pedido"
+                    }
+                ],
                 "btn": "Reservar Consulta ($199)",
                 "note": "*Acreditado al primer proyecto."
             },
@@ -920,7 +929,7 @@
                 "role": "CEO, TechAccessories Inc."
             }
         },
-        "footer": {
+        "footerCta": {
             "title": "¿Listo para asegurar su cadena?",
             "desc": "Comience con una consulta de viabilidad.",
             "viewOther": "Ver Otros Servicios",
@@ -930,7 +939,7 @@
     "ServicesRetainer": {
         "hero": {
             "badge": "Servicio de Retención Mensual",
-            "title": "Su Equipo de<br /> <highlight>Comercio Global</highlight> Externo",
+            "title": "Su Equipo de<br></br> <highlight>Comercio Global</highlight> Externo",
             "desc": "Gestionar proveedores toma tiempo. Actuamos como su socio dedicado: manejamos comunicación, pedidos y logística para que usted crezca.",
             "btn": "Programar Consulta de Gestión"
         },
@@ -1039,7 +1048,7 @@
     "ServicesAudit": {
         "hero": {
             "badge": "Mitigación de Riesgos",
-            "title": "Verifique Antes<br /> <highlight>de Comprometerse</highlight>",
+            "title": "Verifique Antes<br></br> <highlight>de Comprometerse</highlight>",
             "desc": "No confíe solo en fotos. Coordinamos auditorías e inspecciones in situ para asegurar que recibe lo que pidió.",
             "btn": "Programar Consulta QC"
         },
@@ -1152,7 +1161,7 @@
     "ServicesProduct": {
         "hero": {
             "badge": "Tienda Global Curada",
-            "title": "Acceso Directo a<br /> <highlight>Productos de Fábrica</highlight>",
+            "title": "Acceso Directo a<br></br> <highlight>Productos de Fábrica</highlight>",
             "desc": "Acceso exclusivo a un catálogo de productos de alto margen verificados. Sin caos de dropshipping, solo trato directo con fabricantes auditados.",
             "btn": "Discutir Acceso",
             "request": "Pedir Lista de Categorías"

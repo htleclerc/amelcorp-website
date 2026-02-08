@@ -13,7 +13,7 @@ const Hero = () => {
                     <div className={styles.badge}>{t('badge')}</div>
                     <h1 className={styles.title}>
                         {t.rich('title', {
-                            br: () => <br />,
+                            br: (chunks) => <br />,
                             highlight: (chunks) => <span className={styles.highlight}>{chunks}</span>
                         })}
                     </h1>
