@@ -1,0 +1,1497 @@
+{
+    "Common": {
+        "companyName": "Amelcorp Logistics",
+        "bookConsultation": "Book Consultation",
+        "learnMore": "Learn More",
+        "getStarted": "Get Started",
+        "loading": "Loading..."
+    },
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "industries": "Industries",
+        "about": "Why Amelcorp",
+        "pricing": "Pricing",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "badge": "Global Trade Enablement",
+        "title": "Sourcing Intelligence,<br /> <highlight>Not Just Logistics.</highlight>",
+        "description": "AMELCORP LOGISTICS helps U.S. businesses identify, verify, and work with reliable international manufacturers. We reduce the risk of global trade through rigorous sourcing, compliance management, and execution.",
+        "primaryCta": "Book a $199 Global Trade Consultation",
+        "secondaryCta": "Explore Services"
+    },
+    "Footer": {
+        "ctaTitle": "Ready to Source Smarter?",
+        "ctaDesc": "Book a $199 consultation and get a custom sourcing strategy, risk assessment, and supplier recommendations.",
+        "ctaPrimary": "Book Your Consultation Now",
+        "ctaSecondary": "View Pricing Details",
+        "brandDesc": "Global Sourcing & Trade Enablement for U.S. Businesses",
+        "servicesTitle": "Services",
+        "supplierSourcing": "Supplier Sourcing",
+        "tradeManagement": "Trade Management",
+        "qualityControl": "Quality Control",
+        "industriesTitle": "Industries",
+        "electronics": "Electronics",
+        "beauty": "Beauty & Cosmetics",
+        "textiles": "Textiles & Apparel",
+        "contactTitle": "Contact",
+        "copyright": "© {year} Amelcorp Logistics. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    },
+    "MarketReality": {
+        "label": "MARKET REALITY",
+        "title": "You don't need \"cheap\".<br />You need reliable.",
+        "description": "The era of easy dropshipping is over. Today's market demands quality, transparency, and speed. Relying on unverified suppliers on generic marketplaces is a gamble your business can't afford. AMELCORP LOGISTICS ensures your supply chain is built on trust.",
+        "riskLink": "See how we mitigate risk ➔",
+        "fraudTitle": "Fraud & Scams",
+        "fraudText": "Suppliers who vanish after deposit or ship empty containers. We verify existence and legal standing before you pay a dime.",
+        "qualityTitle": "Quality Fade",
+        "qualityText": "Golden samples followed by subpar production batches. Our QC coordination catches defects at the factory, not your warehouse.",
+        "customsTitle": "Customs Delays",
+        "customsText": "Improper HS codes or missing documentation. We manage the paperwork to ensure your goods clear customs smoothly."
+    },
+    "Services": {
+        "label": "OUR EXPERTISE",
+        "title": "Core Trade Services",
+        "subtitle": "We are your boots on the ground and your eyes on the supply chain, from finding the factory to delivering the goods.",
+        "learnMore": "Learn More ➔",
+        "items": [
+            {
+                "title": "Global Sourcing & Verification",
+                "desc": "Identify and verify manufacturers in China, Dubai, and Turkey. We handle background checks, price negotiation, and factory visits.",
+                "tag": "FLAGSHIP"
+            },
+            {
+                "title": "Import/Export Trade Mgmt",
+                "desc": "Identify new market opportunities for your advanced trade department. We manage suppliers and logistics end-to-end."
+            },
+            {
+                "title": "Supplier Audits & QC",
+                "desc": "On-site factory inspections and pre-shipment quality control to ensure your products meet specifications every time."
+            },
+            {
+                "title": "Direct Product Access",
+                "desc": "Curated access to high-margin products from verified manufacturers. No generic marketplaces."
+            }
+        ]
+    },
+    "Industries": {
+        "label": "INDUSTRIES WE SERVE",
+        "title": "Tailored for your sector",
+        "subtitle": "Different products, different risks. We specialize in categories where quality control and compliance are critical.",
+        "exploreLink": "Explore Sourcing ➔",
+        "items": [
+            {
+                "title": "Electronics & Consumer Tech",
+                "desc": "Consumer electronics, IoT devices, accessories. CE/FCC compliance coordination and IP protection."
+            },
+            {
+                "title": "Beauty & Cosmetics",
+                "desc": "Skincare, makeup, packaging. FDA compliance, ingredient verification, and MOQ negotiation."
+            },
+            {
+                "title": "Textiles & Apparel",
+                "desc": "Garments, fabrics, home textiles. Factory certifications, sample approval, and production monitoring."
+            }
+        ]
+    },
+    "IndustriesPage": {
+        "hero": {
+            "badge": "Target Markets",
+            "title": "Deep Expertise Where It Matters",
+            "desc": "We don't dabble in everything. Amelcorp specializes in three high-complexity industries where regulatory compliance, quality control, and supply chain visibility are critical for success."
+        },
+        "electronics": {
+            "title": "Electronics & Consumer Tech",
+            "subtitle": "Smart Home • Accessories • Components",
+            "challenge": {
+                "title": "The Challenge",
+                "desc": "High defect rates, IP theft, and fake certifications are rampant. Sourcing electronics without boots on the ground is a gamble with your brand's reputation."
+            },
+            "solution": {
+                "title": "Our Solution",
+                "desc": "We verify component authenticity, audit for ESD compliance, and manage UL/CE certification documentation before products leave the factory floor."
+            },
+            "risks": {
+                "title": "Common Risks",
+                "items": [
+                    "Component swapping (bait & switch)",
+                    "Fake CE/FCC certificates",
+                    "High failure rates (>5%)"
+                ]
+            },
+            "standard": {
+                "title": "Amelcorp Standard",
+                "items": [
+                    "Functional testing on 100% of units",
+                    "Bill of Materials (BOM) verification",
+                    "IP protection agreements"
+                ]
+            },
+            "cta": {
+                "small": "Ready to source tech?",
+                "bold": "Start with a Feasibility Check",
+                "btn": "Book $199 Consultation"
+            }
+        },
+        "beauty": {
+            "title": "Beauty & Cosmetics",
+            "subtitle": "Packaging • Formulation • Tools",
+            "challenge": {
+                "title": "The Challenge",
+                "desc": "Safety regulations (FDA/EU) are strict. Leaking packaging or contaminated formulations can destroy a brand overnight. MOQs are often prohibitive."
+            },
+            "solution": {
+                "title": "Our Solution",
+                "desc": "We source GMP-certified factories, oversee stability testing, and handle complex custom packaging tooling to ensure your product looks and performs perfectly."
+            },
+            "risks": {
+                "title": "Common Risks",
+                "items": [
+                    "Microbial contamination",
+                    "Packaging leakage/breakage",
+                    "Inconsistent color matching"
+                ]
+            },
+            "standard": {
+                "title": "Amelcorp Standard",
+                "items": [
+                    "GMP / ISO 22716 Audits",
+                    "Vacuum leak testing on packaging",
+                    "Heavy metal & stability testing"
+                ]
+            },
+            "cta": {
+                "small": "Launching a beauty line?",
+                "bold": "Vet Your Supplier First",
+                "btn": "Book $199 Consultation"
+            }
+        },
+        "textiles": {
+            "title": "Textiles & Apparel",
+            "subtitle": "Fashion • Uniforms • Technical Fabrics",
+            "challenge": {
+                "title": "The Challenge",
+                "desc": "\"What you see is not what you get.\" Fabric substitution, poor stitching quality, and sizing inconsistencies are the norm without strict oversight."
+            },
+            "solution": {
+                "title": "Our Solution",
+                "desc": "We implement AQL 2.5 inspections, verify fabric composition (GSM/blend), and ensure ethical labor practices in factories across Turkey, China, and Vietnam."
+            },
+            "risks": {
+                "title": "Common Risks",
+                "items": [
+                    "Incorrect sizing/grading",
+                    "Color bleeding/fading",
+                    "Lower GSM fabric substitution"
+                ]
+            },
+            "standard": {
+                "title": "Amelcorp Standard",
+                "items": [
+                    "Pre-production sample approval",
+                    "AQL 2.5 Final Inspection",
+                    "Lab testing for fabric content"
+                ]
+            },
+            "cta": {
+                "small": "Need reliable garment production?",
+                "bold": "Secure Your Supply Chain",
+                "btn": "Book $199 Consultation"
+            }
+        },
+        "globalCta": {
+            "title": "Don't See Your Industry?",
+            "desc": "While we specialize in Electronics, Beauty, and Textiles, our sourcing network extends to Home Goods, Construction Materials, and Industrial Equipment.",
+            "checks": [
+                "Custom sourcing feasibility study",
+                "Supplier verification in 5+ countries"
+            ],
+            "card": {
+                "title": "Let's Assess Your Project",
+                "lead": "Start with a low-risk consultation to see if we're the right fit for your supply chain needs.",
+                "feeLabel": "Initial Consultation",
+                "feeValue": "$199",
+                "btn": "Book Consultation Now",
+                "foot": "Includes 45-min strategy call + feasibility report"
+            }
+        }
+    },
+    "Calendar": {
+        "title": "Select a Date & Time",
+        "selectDate": "Select a date to see available times",
+        "availableTimes": "Available Times (EST) for {date}",
+        "loading": "Loading slots...",
+        "noSlots": "No slots available for this date.",
+        "months": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ],
+        "days": [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ]
+    },
+    "Booking": {
+        "steps": {
+            "qualification": "Qualification",
+            "schedule": "Schedule",
+            "payment": "Payment"
+        },
+        "step1": {
+            "sidebarTitle": "Let's verify your project fit.",
+            "sidebarDesc": "Amelcorp Logistics prioritizes high-trust partnerships. To ensure we can deliver value and protect your investment, we need to understand your sourcing volume and readiness before booking a consultation.",
+            "riskTitle": "Risk Assessment",
+            "riskDesc": "We filter out high-risk or unfeasible projects early to save your time.",
+            "expertTitle": "Expert Matching",
+            "expertDesc": "Your answers help us match you with a specialist in your specific industry.",
+            "note": "Please note: We do not currently service individual dropshippers with volumes under $5k/month.",
+            "formTitle": "Project Details",
+            "formSubtitle": "Provide basic info to check your project fit.",
+            "contactInfo": "Contact Information",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email Address *",
+            "businessProfile": "Business Profile",
+            "structure": "Business Structure",
+            "industry": "Primary Industry",
+            "volumeScope": "Volume & Scope",
+            "orderValue": "Estimated Initial Order Value (USD)",
+            "targetCountry": "Target Sourcing Country",
+            "timeline": "Target Launch Timeline",
+            "submitOnly": "Submit Qualification Only",
+            "saveContinue": "Save & Continue"
+        },
+        "step2": {
+            "title": "Select a Date & Time",
+            "subtitle": "Choose a slot for your 45-minute Global Trade Strategy Session.",
+            "selectedSlot": "Selected: {date}, {time} EST",
+            "noSlot": "No slot selected. You can still submit and pay later.",
+            "submitPayLater": "Submit & Pay Later",
+            "continuePayment": "Continue to Payment",
+            "whyTitle": "Why Schedule Now?",
+            "whySubtitle": "Lock in your time slot with our senior trade experts.",
+            "reasons": [
+                {
+                    "title": "Priority Access",
+                    "desc": "Secure the earliest available slot for your project."
+                },
+                {
+                    "title": "Preparation Time",
+                    "desc": "Give our team time to review your qualification data."
+                },
+                {
+                    "title": "Flexible Rescheduling",
+                    "desc": "Reschedule up to 24 hours before the call if needed."
+                }
+            ]
+        },
+        "step3": {
+            "summaryTitle": "Order Summary",
+            "consultationTitle": "Global Trade Consultation",
+            "consultationSub": "One-time strategy session",
+            "whatsIncluded": "What's Included:",
+            "includedItems": [
+                "45-minute senior strategy call",
+                "Feasibility assessment",
+                "Country + supplier pathway map",
+                "Risk & cost overview",
+                "Formal next-step proposal"
+            ],
+            "creditPolicyTitle": "100% Credit Policy",
+            "creditPolicyDesc": "This $199 fee is fully credited towards any future sourcing project or retainer engagement you book with us.",
+            "checkoutTitle": "Secure Checkout",
+            "checkoutSubtitle": "Choose your payment method to finalize.",
+            "secureConnection": "Secure Connection",
+            "payMethod": "Select Payment Method",
+            "redirectTitle": "You will be redirected",
+            "redirectDesc": "To complete your $199 payment securely via {method}.",
+            "termsText": "I understand this is a paid consultation ($199 USD). This fee is fully credited toward any future sourcing project or retainer. By proceeding, I agree to Amelcorp Logistics' <Link>Terms of Service</Link>.",
+            "completePayLater": "Complete & Pay Later",
+            "payVia": "Pay $199.00 via {method}"
+        },
+        "success": {
+            "title": "Request Received!",
+            "desc": "Thank you for choosing Amelcorp Logistics. Our team is reviewing your project details.",
+            "trackingId": "Tracking ID",
+            "scheduledDate": "Scheduled Date",
+            "status": "Status",
+            "statusPending": "Pending Final Confirmation",
+            "note": "A confirmation email has been sent to {email} with next steps and preparation guidelines.",
+            "homeBtn": "Return to Homepage"
+        },
+        "errors": {
+            "emailRequired": "Please provide your email to save your progress.",
+            "qualificationRequired": "Please complete the qualification fields first.",
+            "actionRequired": "Action Required"
+        }
+    },
+    "WhyAmelcorp": {
+        "hero": {
+            "badge": "Trust & Execution",
+            "title": "We Don't Just Move Goods.<br /> <highlight>We Verify Everything.</highlight>",
+            "desc": "In a market flooded with \"cheap\" options and hidden risks, Amelcorp stands for radical transparency, rigorous verification, and documentation discipline. We are your eyes and ears on the ground.",
+            "trust": [
+                "Fraud Protection",
+                "Legal Compliance",
+                "Total Visibility"
+            ],
+            "sidebar": {
+                "fraud": "Tolerance for Fraud",
+                "title": "The Amelcorp Standard",
+                "items": [
+                    {
+                        "title": "Deep Verification",
+                        "desc": "We visit factories. We check business licenses against government databases. We verify bank accounts before you wire a cent."
+                    },
+                    {
+                        "title": "Documentation Discipline",
+                        "desc": "Every step is documented. From POs to QC reports to customs filings. No handshake deals, only enforceable contracts."
+                    },
+                    {
+                        "title": "Accountability",
+                        "desc": "We are a US-based entity. You deal with us, legally and financially. We bridge the gap so you don't have to chase suppliers across time zones."
+                    }
+                ]
+            }
+        },
+        "matrix": {
+            "title": "Clear Positioning. No Ambiguity.",
+            "desc": "We are a Trade Enablement Company, not a generic freight forwarder. Understanding the difference is key to our partnership.",
+            "do": {
+                "title": "What We Do",
+                "items": [
+                    {
+                        "title": "Source & Verify:",
+                        "desc": "We find legitimate manufacturers and verify their capabilities on-site."
+                    },
+                    {
+                        "title": "Manage Trade:",
+                        "desc": "We handle the entire lifecycle from negotiation to sample approval to final delivery."
+                    },
+                    {
+                        "title": "Mitigate Risk:",
+                        "desc": "We implement QC inspections and strict contracts to prevent quality fade."
+                    },
+                    {
+                        "title": "Leverage Partners:",
+                        "desc": "We use a vetted network of logistics providers for shipping, without owning the trucks."
+                    }
+                ]
+            },
+            "dont": {
+                "title": "What We Don't Do",
+                "items": [
+                    {
+                        "title": "Asset-Heavy Logistics:",
+                        "desc": "We don't own ships, planes, or warehouses. We are asset-light and agile."
+                    },
+                    {
+                        "title": "Generic Dropshipping:",
+                        "desc": "We don't source random AliExpress junk. We build supply chains for brands."
+                    },
+                    {
+                        "title": "Race to the Bottom:",
+                        "desc": "We don't compete on \"cheapest shipping rates.\" We compete on reliability and total landed cost."
+                    },
+                    {
+                        "title": "Cut Corners:",
+                        "desc": "We never bypass compliance or customs regulations to save a few dollars."
+                    }
+                ]
+            }
+        },
+        "methodology": {
+            "label": "Methodology",
+            "title": "How We Work",
+            "desc": "A structured, predictable process designed to move you from idea to inventory with minimal friction.",
+            "steps": [
+                {
+                    "title": "Discovery & Feasibility",
+                    "time": "Week 1",
+                    "desc": "We assess your product requirements, target price, and volume. We run a preliminary check on our supplier database to confirm viability before you commit to a full project.",
+                    "badges": [
+                        "Requirement Analysis",
+                        "Market Scan"
+                    ]
+                },
+                {
+                    "title": "Sourcing & Verification",
+                    "time": "Week 2-4",
+                    "desc": "We identify 3-5 potential manufacturers. We verify their licenses, audit their facilities (if needed), and negotiate pricing and MOQs on your behalf.",
+                    "badges": [
+                        "Factory Audit",
+                        "Background Check"
+                    ]
+                },
+                {
+                    "title": "Sampling & QC Setup",
+                    "time": "Week 4-6",
+                    "desc": "We coordinate samples, review them against your specs, and iterate until perfect. We then define the Quality Control (QC) checklist for mass production.",
+                    "badges": [
+                        "Sample Review",
+                        "Golden Sample Seal"
+                    ]
+                },
+                {
+                    "title": "Production & Logistics",
+                    "time": "Ongoing",
+                    "desc": "We monitor production, conduct final inspections, handle export documentation, and coordinate shipping with our logistics partners to your door.",
+                    "badges": [
+                        "Final QC",
+                        "Freight Coordination"
+                    ]
+                }
+            ]
+        },
+        "partners": {
+            "title": "Our Partner Ecosystem",
+            "desc": "We don't do it all alone. We leverage a network of verified specialists to ensure every part of your supply chain is handled by an expert.",
+            "items": [
+                {
+                    "title": "Freight Forwarders",
+                    "desc": "Tier-1 partners for Air & Ocean freight with guaranteed space."
+                },
+                {
+                    "title": "Inspection Agencies",
+                    "desc": "Independent 3rd party auditors (SGS, Intertek style standards)."
+                },
+                {
+                    "title": "Legal Counsel",
+                    "desc": "Local legal experts in China & Turkey for contract enforcement."
+                },
+                {
+                    "title": "3PL Warehousing",
+                    "desc": "Strategic partners for US-based fulfillment and storage."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to Source with Confidence?",
+            "desc": "Book a $199 Global Sourcing Consultation. We'll assess your needs, outline a clear path forward, and show you exactly how we protect your investment.",
+            "btn": "Book Your Consultation Now",
+            "trust": [
+                "100% Transparent Process",
+                "US-Based Legal Entity",
+                "No Hidden Fees"
+            ]
+        }
+    },
+    "Contact": {
+        "hero": {
+            "title": "Get in Touch",
+            "desc": "Whether you have a question about our services, pricing, or need to qualify for a consultation, our team is ready to assist you."
+        },
+        "info": {
+            "title": "Contact Information",
+            "headquarters": {
+                "title": "Headquarters",
+                "address": "350 Fifth Avenue, Suite 7820\nNew York, NY 10118\nUnited States"
+            },
+            "email": {
+                "title": "Email"
+            },
+            "phone": {
+                "title": "Phone",
+                "hours": "Mon-Fri, 9am - 6pm EST"
+            }
+        },
+        "inquiries": {
+            "title": "General Inquiries",
+            "desc": "For partnership proposals or press, please email us directly at",
+            "person": {
+                "name": "Sarah Jenkins",
+                "role": "Director of Client Relations"
+            }
+        },
+        "form": {
+            "header": "Client Qualification Form",
+            "subhead": "Required to schedule your $199 Global Sourcing Consultation.",
+            "secure": "Secure Submission",
+            "sections": {
+                "business": "Business Details",
+                "sourcing": "Sourcing Requirements",
+                "additional": "Additional Details"
+            },
+            "fields": {
+                "fullName": "Full Name",
+                "email": "Business Email",
+                "phone": "Phone Number",
+                "companyName": "Company Name",
+                "businessType": "Business Type",
+                "industry": "Primary Industry",
+                "country": "Target Sourcing Country",
+                "orderValue": "Estimated Order Value (Monthly)",
+                "timeline": "Timeline",
+                "volume": "Monthly Sourcing Volume (Units)",
+                "details": "Additional Details",
+                "detailsPlaceholder": "Briefly describe your product goals or specific challenges..."
+            },
+            "types": {
+                "llc": "LLC / Corp",
+                "sole": "Sole Proprietor",
+                "individual": "Individual"
+            },
+            "industries": {
+                "tech": "Electronics & Tech",
+                "beauty": "Beauty & Cosmetics",
+                "textiles": "Textiles & Apparel"
+            },
+            "countries": [
+                "China",
+                "United Arab Emirates (Dubai)",
+                "Turkey",
+                "Vietnam",
+                "Open to Recommendation"
+            ],
+            "orderValues": [
+                "Under $5,000",
+                "$5,000 - $15,000",
+                "$15,000 - $50,000",
+                "$50,000+"
+            ],
+            "timelines": [
+                "Immediate (0-30 days)",
+                "Short Term (30-90 days)",
+                "Planning Phase (90+ days)"
+            ],
+            "volumes": [
+                "Prototype / Sample Only",
+                "100 - 500 units",
+                "500 - 2,000 units",
+                "2,000+ units"
+            ],
+            "footer": {
+                "secure": "Your data is encrypted and secure.",
+                "submit": "Send Your Qualification"
+            }
+        }
+    },
+    "Pricing": {
+        "hero": {
+            "badge": "Transparent Engagement Model",
+            "title": "Invest in Certainty.<br />Not Hidden Fees.",
+            "desc": "We don't hide margin in shipping rates. We charge professional fees for professional trade execution. Clear, upfront, and ROI-focused."
+        },
+        "strategy": {
+            "title": "Required First Step: The Strategy Call",
+            "card": {
+                "title": "Global Trade Consultation",
+                "badge": "Entry Level",
+                "desc": "Before we accept any sourcing project or retainer, we must validate your feasibility. This 45-minute strategy session saves you thousands in potential mistakes by verifying if your product, volume, and timeline match market realities.",
+                "features": [
+                    "Feasibility Assessment",
+                    "Country Pathway Recommendations",
+                    "Risk & Cost Overview",
+                    "Custom Next-Step Proposal"
+                ],
+                "investment": "One-time Investment",
+                "fee": "$199",
+                "note": "Credited towards future services if qualified",
+                "btn": "Book Consultation",
+                "secure": "100% Secure Payment"
+            }
+        },
+        "tiers": {
+            "title": "Select Your Engagement Model",
+            "sourcing": {
+                "title": "Tier 1: Sourcing & Verification",
+                "desc": "For brands needing to identify, verify, and set up production with new manufacturers.",
+                "projectFee": "Project Fee",
+                "successFee": "Success Fee",
+                "orderValue": "on order value",
+                "features": [
+                    {
+                        "title": "Manufacturer Identification",
+                        "desc": "China, Dubai, Turkey, Vietnam"
+                    },
+                    {
+                        "title": "Background Verification",
+                        "desc": "Legal checks, bank account verification"
+                    },
+                    {
+                        "title": "Price Negotiation",
+                        "desc": "Benchmarking & MOQ negotiation"
+                    },
+                    {
+                        "title": "Sample Coordination",
+                        "desc": "Consolidation & review"
+                    }
+                ],
+                "btn": "Start Qualification"
+            },
+            "management": {
+                "popular": "Most Popular",
+                "title": "Tier 2: Trade Management",
+                "desc": "Your outsourced global supply chain team. We handle daily operations so you can focus on sales.",
+                "monthlyRetainer": "Monthly Retainer",
+                "commitment": "Commitment",
+                "min": "3 Month Min.",
+                "features": [
+                    {
+                        "title": "Supplier Communication",
+                        "desc": "Daily management & translation"
+                    },
+                    {
+                        "title": "Order Management",
+                        "desc": "PO tracking, production updates"
+                    },
+                    {
+                        "title": "Logistics Coordination",
+                        "desc": "Freight booking & customs docs"
+                    },
+                    {
+                        "title": "Issue Resolution",
+                        "desc": "Dispute handling & replacement"
+                    }
+                ],
+                "btn": "Book Consultation to Start"
+            }
+        },
+        "addons": {
+            "title": "Specialized Add-Ons",
+            "items": [
+                {
+                    "title": "Supplier Audits",
+                    "desc": "On-site factory verification and capability assessment reports.",
+                    "price": "$1,500 - $4,000",
+                    "unit": "per report"
+                },
+                {
+                    "title": "Market Entry Advisory",
+                    "desc": "Strategic roadmap for US companies entering Asian/Middle East markets.",
+                    "price": "$5,000 - $15,000",
+                    "unit": "per project"
+                },
+                {
+                    "title": "QC Coordination",
+                    "desc": "Pre-shipment quality inspections to protect your investment.",
+                    "price": "$800 - $2,500",
+                    "unit": "per inspection"
+                }
+            ]
+        },
+        "factors": {
+            "title": "How Your Pricing Is Determined",
+            "items": [
+                {
+                    "title": "Industry",
+                    "desc": "Complexity of product category"
+                },
+                {
+                    "title": "Volume",
+                    "desc": "Order size & frequency"
+                },
+                {
+                    "title": "Geography",
+                    "desc": "Source country logistics"
+                },
+                {
+                    "title": "Timeline",
+                    "desc": "Urgency & project scope"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to Source with Confidence?",
+            "desc": "Start with a $199 consultation. Get clarity, reduce risk, and build a roadmap to reliable global sourcing.",
+            "primary": "Book Your $199 Consultation",
+            "secondary": "Start Qualification Form"
+        }
+    },
+    "ServicesOverview": {
+        "hero": {
+            "title": "End-to-End Trade Enablement",
+            "desc": "We don't just move boxes. We verify suppliers, negotiate contracts, and manage the entire lifecycle of your global supply chain so you can scale without the stress."
+        },
+        "model": {
+            "label": "THE AMELCORP MODEL",
+            "title": "One Accountable Intermediary",
+            "desc": "Tired of chasing factories, freight forwarders, and customs brokers separately? Amelcorp bridges the gap by managing the entire ecosystem under one roof.",
+            "benefits": [
+                {
+                    "title": "Radical Transparency",
+                    "desc": "No hidden margins in shipping or sourcing. You pay for execution, and you see every contract."
+                },
+                {
+                    "title": "Boots on the Ground",
+                    "desc": "We have physical presence and vetted partners in major sourcing hubs (China, UAE, Turkey)."
+                },
+                {
+                    "title": "Legal Protection",
+                    "desc": "US-based contracts with enforceable terms, protecting your IP and your capital."
+                }
+            ],
+            "checks": [
+                "Fraud Risk Assessment",
+                "Logistics Optimization",
+                "Compliance Verification",
+                "Supplier Accountability"
+            ],
+            "hubLabel": "HUB",
+            "nodes": {
+                "business": "Your Business",
+                "hub": "Amelcorp Hub",
+                "factories": "Factories",
+                "logistics": "Logistics",
+                "customs": "Customs"
+            }
+        },
+        "services": {
+            "sourcing": {
+                "badge": "FLAGSHIP",
+                "title": "Global Supplier Sourcing & Verification",
+                "desc": "Find and vet reliable manufacturers in China, Dubai, and Turkey. We handle background checks, price negotiation, and factory visits.",
+                "features": [
+                    "Supplier Background Checks",
+                    "Price & MOQ Negotiation",
+                    "Sample Coordination",
+                    "Golden Sample Approval"
+                ],
+                "price": "Project Based",
+                "priceTag": "Project Based",
+                "btn": "Explore Sourcing"
+            },
+            "management": {
+                "title": "Import/Export Trade Management",
+                "desc": "Our team acts as your outsourced global supply chain department, handling daily supplier communications and logistics coordination.",
+                "tags": [
+                    "RETAINER",
+                    "OUTSOURCED"
+                ],
+                "features": [
+                    "Daily Supplier Communication",
+                    "Purchase Order Tracking",
+                    "Logistics & Freight Coordination",
+                    "Export Documentation"
+                ],
+                "priceTag": "Monthly Retainer",
+                "btn": "Explore Management"
+            },
+            "qc": {
+                "title": "Supplier Audits & QC",
+                "desc": "On-site factory inspections and pre-shipment quality control to ensure your products meet specifications every time.",
+                "features": [
+                    "Factory Legitimacy Audits",
+                    "In-Line Production Inspection",
+                    "Final Pre-Shipment Inspection",
+                    "Compliance Photo Evidence"
+                ],
+                "priceTag": "On-Demand",
+                "btn": "Explore Audits"
+            },
+            "access": {
+                "title": "Direct Product Access",
+                "desc": "Curated access to high-margin products from verified manufacturers. Skip the generic marketplaces and source from professional factories.",
+                "features": [
+                    "Curated Product Catalog",
+                    "Verified B2B Suppliers",
+                    "White-Label Opportunities",
+                    "Consolidated Sampling"
+                ],
+                "priceTag": "Strategy Call",
+                "btn": "Explore Access"
+            }
+        },
+        "cta": {
+            "title": "Not sure which service you need?",
+            "desc": "Book a strategy call and we'll map out the best path for your specific project.",
+            "btn": "Global Trade Consultation ($199)",
+            "note": "30-minute video call. Zero obligation."
+        }
+    },
+    "ServicesSourcing": {
+        "hero": {
+            "badge": "Flagship Service",
+            "title": "Find Verified Manufacturers.<br /> <highlight>Reduce Risk.</highlight> Scale with Confidence.",
+            "desc": "We eliminate sourcing uncertainty by identifying, verifying, and negotiating with production-ready manufacturers in China, Dubai, and Turkey. Get the right partner, not just the cheapest quote.",
+            "btn": "Book a $199 Sourcing Consultation",
+            "verified": "100% Verified Suppliers"
+        },
+        "impact": {
+            "title": "Service Impact",
+            "cost": {
+                "value": "15-30%",
+                "label": "Avg. Cost Reduction"
+            },
+            "fraud": {
+                "value": "Zero",
+                "label": "Fraud Incidents"
+            },
+            "hubs": {
+                "value": "3 Major",
+                "label": "Sourcing Hubs (CN, UAE, TR)"
+            }
+        },
+        "whatWeDo": {
+            "title": "What We Do",
+            "lead": "Most sourcing disasters happen before the first deposit is paid. We step in as your on-the-ground intelligence team, ensuring that the factory you hire is legitimate, capable, and contractually bound to deliver quality.",
+            "items": [
+                {
+                    "title": "Supplier Verification",
+                    "desc": "Deep background checks on business licenses, export permits, and production capacity to filter out middlemen and frauds."
+                },
+                {
+                    "title": "Sample Coordination",
+                    "desc": "We manage the sampling loop—consolidating prototypes, checking specs, and ensuring the \"golden sample\" is locked in."
+                },
+                {
+                    "title": "Negotiation Support",
+                    "desc": "Leveraging local market knowledge to secure better payment terms, lower MOQs, and competitive unit pricing."
+                },
+                {
+                    "title": "Documentation Coordination",
+                    "desc": "Ensuring all export docs, compliance certificates, and contracts are correctly prepared for US customs entry."
+                }
+            ]
+        },
+        "process": {
+            "title": "How It Works",
+            "steps": [
+                {
+                    "title": "Consultation",
+                    "desc": "We assess feasibility, target price, and country selection (China vs. Turkey vs. UAE)."
+                },
+                {
+                    "title": "Sourcing & Vetting",
+                    "desc": "We identify top 5 manufacturers, audit them, and present the best 2 candidates."
+                },
+                {
+                    "title": "Sampling",
+                    "desc": "Prototype development and refinement until the perfect \"Golden Sample\" is approved."
+                },
+                {
+                    "title": "Production",
+                    "desc": "Contract signing, deposit placement, and mass production begins with QC oversight."
+                }
+            ]
+        },
+        "risks": {
+            "title": "Risks We Eliminate",
+            "items": [
+                {
+                    "title": "The \"Middleman\" Trap",
+                    "desc": "Many \"factories\" on Alibaba are actually trading companies adding 30% margin. We verify direct ownership."
+                },
+                {
+                    "title": "Quality Fade",
+                    "desc": "Suppliers often send a perfect sample but use cheaper materials for the main order. Our contracts and QC prevent this."
+                },
+                {
+                    "title": "Payment Fraud",
+                    "desc": "We verify bank account details against business licenses to ensure you aren't wiring money to a scammer's personal account."
+                }
+            ]
+        },
+        "sidebar": {
+            "title": "Is This Service For You?",
+            "ideal": [
+                {
+                    "title": "Scaling E-commerce Brands",
+                    "desc": "Ready to move from dropshipping to bulk inventory for better margins."
+                },
+                {
+                    "title": "Retailers & Wholesalers",
+                    "desc": "Need reliable restocking without constant quality headaches."
+                },
+                {
+                    "title": "Construction & Industry",
+                    "desc": "Sourcing materials or machinery where specs must be exact."
+                }
+            ],
+            "pricing": {
+                "title": "Pricing Model",
+                "desc": "Transparent project fee + success fee.",
+                "sourcingFee": "Sourcing Fee",
+                "successFee": "Success Fee",
+                "btn": "Book Consultation ($199)",
+                "note": "*Consultation fee credited towards first project invoice."
+            },
+            "testimonial": {
+                "quote": "\"We wasted 6 months with a factory that couldn't deliver. Amelcorp found a replacement in Turkey within 2 weeks.\"",
+                "author": "David M.",
+                "role": "CEO, TechAccessories Inc."
+            }
+        },
+        "footer": {
+            "title": "Ready to secure your supply chain?",
+            "desc": "Start with a feasibility consultation to map out your sourcing strategy.",
+            "viewOther": "View Other Services",
+            "bookNow": "Book Now"
+        }
+    },
+    "ServicesRetainer": {
+        "hero": {
+            "badge": "Monthly Retainer Service",
+            "title": "Your Outsourced<br /> <highlight>Global Trade Team.</highlight>",
+            "desc": "Managing international suppliers is time-consuming and risky. We act as your dedicated trade management partner—handling supplier communication, purchase orders, documentation, and shipping coordination so you can focus on growth.",
+            "btn": "Schedule a Trade Management Consultation"
+        },
+        "impact": {
+            "title": "Retainer Benefits",
+            "time": {
+                "value": "20+ Hours",
+                "label": "Saved Weekly per Client"
+            },
+            "compliance": {
+                "value": "100%",
+                "label": "Compliance Accuracy"
+            },
+            "manager": {
+                "value": "Dedicated",
+                "label": "Account Manager"
+            }
+        },
+        "whatWeManage": {
+            "title": "What We Manage For You",
+            "lead": "Stop waking up at 2 AM to answer WeChat messages. Our team takes over the entire operational burden of your international supply chain, acting as your internal logistics department.",
+            "items": [
+                {
+                    "title": "Supplier Communication",
+                    "desc": "We bridge the language and timezone gap. We handle all daily correspondence, ensuring your specifications are understood and timelines are met."
+                },
+                {
+                    "title": "PO Tracking & Updates",
+                    "desc": "Real-time visibility into production status. We proactively chase factories to prevent \"surprise\" delays right before shipping."
+                },
+                {
+                    "title": "Incoterms Advisory",
+                    "desc": "Don't overpay for shipping or accept liability too early. We optimize your Incoterms (FOB, EXW, DDP) for cost and risk balance."
+                },
+                {
+                    "title": "Export Docs Coordination",
+                    "desc": "Commercial invoices, packing lists, COO, and HS codes. We ensure paperwork is flawless to prevent customs holds at US ports."
+                },
+                {
+                    "title": "Shipping Coordination",
+                    "desc": "We don't own ships, but we manage the partners who do. We quote, book, and track freight through trusted forwarders."
+                },
+                {
+                    "title": "Issue Resolution",
+                    "desc": "When things go wrong (and they do), we step in to negotiate replacements, refunds, or expedited shipping on the factory's dime."
+                }
+            ]
+        },
+        "engagement": {
+            "title": "Engagement Model",
+            "desc": "To ensure we can truly optimize your supply chain, we require a minimum engagement period. This allows us to fix existing issues, streamline communication, and demonstrate ROI.",
+            "commitment": "3-Month Minimum Commitment",
+            "rolling": "Monthly Rolling After",
+            "startingAt": "Starting At",
+            "unit": "/mo",
+            "note": "Based on volume & complexity"
+        },
+        "audience": {
+            "title": "Who Needs This Service?",
+            "items": [
+                {
+                    "title": "Growing SMBs",
+                    "desc": "You're too big to manage it yourself, but too small to hire a full-time Supply Chain Director ($120k+ salary)."
+                },
+                {
+                    "title": "Private Label Brands",
+                    "desc": "You have 5-20 SKUs and need consistent reordering without quality fade or shipping delays."
+                },
+                {
+                    "title": "Wholesalers",
+                    "desc": "High-volume importers who need a dedicated team to manage documentation and logistics coordination."
+                }
+            ]
+        },
+        "sidebar": {
+            "title": "Monthly Retainer",
+            "badge": "POPULAR",
+            "desc": "Get a full logistics department for a fraction of the cost of one employee.",
+            "feeLabel": "Monthly Fee",
+            "feeNote": "Depends on SKU count & supplier volume",
+            "features": [
+                "Dedicated Account Manager",
+                "Unlimited Supplier Comms",
+                "Documentation Handling",
+                "Logistics Coordination"
+            ],
+            "btn": "Book Consultation ($199)",
+            "note": "Required entry point to assess your supply chain needs.",
+            "caseStudy": {
+                "tag": "Case Study",
+                "title": "Electronics Importer",
+                "quote": "\"Before Amelcorp, our shipments were stuck in customs 30% of the time due to bad paperwork. Since hiring them on retainer, we haven't had a single delay in 12 months.\"",
+                "volumeLabel": "Monthly Volume",
+                "volumeValue": "4 Containers",
+                "savingsLabel": "Savings",
+                "savingsValue": "$42k / Year"
+            }
+        },
+        "footer": {
+            "title": "Need a team you can trust?",
+            "desc": "Start with a consultation to see if our retainer model fits your business.",
+            "viewOther": "View Other Services",
+            "bookNow": "Book Consultation ($199)"
+        }
+    },
+    "ServicesAudit": {
+        "hero": {
+            "badge": "Risk Mitigation & Quality Assurance",
+            "title": "Verify Before<br /> <highlight>You Commit.</highlight>",
+            "desc": "Don't rely on photos sent by the factory. We coordinate on-the-ground supplier audits and quality control inspections to protect your investment, ensuring you only pay for products that meet your specifications.",
+            "btn": "Schedule QC Consultation"
+        },
+        "impact": {
+            "title": "Inspection Impact",
+            "defect": {
+                "value": "98%",
+                "label": "Defect Rate Reduction"
+            },
+            "turnaround": {
+                "value": "24-48h",
+                "label": "Report Turnaround"
+            },
+            "fraud": {
+                "value": "Zero",
+                "label": "Advance Fraud Risk"
+            }
+        },
+        "audit": {
+            "title": "Factory Audit Coordination",
+            "lead": "Is your supplier a real manufacturer or a middleman in an apartment? Our audit coordination verifies the legitimacy, capacity, and working conditions of your potential partners before you wire a deposit.",
+            "items": [
+                {
+                    "title": "Legal Verification",
+                    "desc": "We confirm business licenses, export permits, and financial standing to ensure the entity legally exists and is solvent."
+                },
+                {
+                    "title": "Production Capacity",
+                    "desc": "Inspectors verify machinery, workforce size, and production lines to confirm they can actually meet your order volume."
+                }
+            ]
+        },
+        "qc": {
+            "title": "QC Inspection Scheduling",
+            "lead": "We schedule inspectors at critical milestones to catch defects early. You receive a detailed PDF report with photos and videos within 24 hours of inspection.",
+            "phases": [
+                {
+                    "title": "Pre-Production Inspection (PPI)",
+                    "desc": "Checks raw materials and components before mass production begins. Crucial for custom products."
+                },
+                {
+                    "title": "During Production Inspection (DUPRO)",
+                    "desc": "Occurs when 20-50% of goods are produced. Identifies systemic errors while they can still be fixed."
+                },
+                {
+                    "title": "Pre-Shipment Inspection (PSI)",
+                    "desc": "The final check when 80-100% of goods are packed. We verify quantity, workmanship, and packaging integrity.",
+                    "badge": "Most Popular"
+                }
+            ]
+        },
+        "compliance": {
+            "title": "Compliance Documentation Review",
+            "desc": "Shipping non-compliant goods can lead to seizure by US Customs. We review supplier certificates (CE, FCC, FDA, UL) to ensure they are authentic and valid for the US market.",
+            "items": [
+                "Certificate Authenticity Check",
+                "Lab Report Verification",
+                "Labeling Compliance (Made in...)",
+                "Packaging Drop Tests"
+            ]
+        },
+        "deliverables": {
+            "title": "What You Receive",
+            "items": [
+                {
+                    "title": "Photo Evidence",
+                    "desc": "High-res photos of product details, packaging, and defects."
+                },
+                {
+                    "title": "AQL Report",
+                    "desc": "Statistical Pass/Fail result based on international standards (AQL 2.5)."
+                },
+                {
+                    "title": "Action Plan",
+                    "desc": "Our recommendation on whether to ship, rework, or cancel."
+                }
+            ]
+        },
+        "sidebar": {
+            "title": "QC & Audit Services",
+            "badge": "ON-DEMAND",
+            "desc": "A small upfront cost to prevent thousands in losses from unsellable goods.",
+            "feeLabel": "Service Fee Range",
+            "feeNote": "Per report/audit (includes coordination)",
+            "features": [
+                "Inspector Scheduling",
+                "Custom Checklist Creation",
+                "Detailed PDF Reports",
+                "Corrective Action Support"
+            ],
+            "btn": "Book Consultation ($199)",
+            "note": "We'll define your inspection criteria during the call.",
+            "riskReality": {
+                "tag": "The Cost of Skipping QC",
+                "title": "\"It looked fine in photos\"",
+                "quote": "A client skipped PSI to save $1,500. The result? 3,000 units arrived with the wrong power plug.",
+                "costLabel": "Rework Cost",
+                "costValue": "$12,000",
+                "delayLabel": "Delay",
+                "delayValue": "6 Weeks"
+            }
+        },
+        "footer": {
+            "title": "Ready to verify your supplier?",
+            "desc": "Let's confirm the scope and inspection points for your next order.",
+            "viewOther": "View Other Services",
+            "bookNow": "Book Now"
+        }
+    },
+    "ServicesProduct": {
+        "hero": {
+            "badge": "Curated Global Store",
+            "title": "Direct-from-Manufacturer<br /> <highlight>Product Access</highlight>",
+            "desc": "Gain exclusive access to a curated catalog of verified, high-margin products. No dropshipping chaos, no unknown suppliers—just direct lines to manufacturers we've personally vetted for quality and reliability.",
+            "btn": "Discuss Product Access",
+            "request": "Request Category List"
+        },
+        "impact": {
+            "title": "The Amelcorp Standard",
+            "verified": {
+                "value": "100% Verified",
+                "label": "Manufacturers Only"
+            },
+            "whiteLabel": {
+                "value": "White-Label",
+                "label": "Options Available"
+            },
+            "zero": {
+                "value": "Zero",
+                "label": "Generic Dropshipping"
+            }
+        },
+        "notDropshipping": {
+            "title": "This is NOT Dropshipping.",
+            "desc": "Traditional dropshipping relies on unknown vendors, inconsistent shipping times, and zero quality control. Our model is different. We curate a limited selection of high-demand SKUs from manufacturers we have physically visited or rigorously audited.",
+            "noRoulette": {
+                "title": "No AliExpress Roulette",
+                "desc": "We don't guess on quality."
+            },
+            "directFactory": {
+                "title": "Direct Factory Contracts",
+                "desc": "Clear terms, verified capacity."
+            }
+        },
+        "categories": {
+            "title": "Limited SKU, High Quality Access",
+            "lead": "We don't offer everything. We offer what sells and what we can vouch for. Our catalog is focused on high-margin categories where quality makes the difference.",
+            "beauty": {
+                "name": "Beauty & Packaging",
+                "items": [
+                    "Premium Glass/PET",
+                    "Custom Tooling"
+                ]
+            },
+            "tech": {
+                "name": "Consumer Tech",
+                "items": [
+                    "Certified Components",
+                    "Strict QC Standards"
+                ]
+            },
+            "textiles": {
+                "name": "Textiles & Apparel",
+                "items": [
+                    "Sustainable Fabrics",
+                    "Low MOQs Available"
+                ]
+            }
+        },
+        "whiteLabel": {
+            "title": "B2B & White-Label Ready",
+            "badge": "Scalable",
+            "lead": "Looking to build your own brand? Many of our curated products are available for white-labeling. We handle the communication with the factory to customize packaging, logos, and minor feature tweaks.",
+            "branding": {
+                "title": "Custom Branding",
+                "desc": "Logo placement and custom packaging design support."
+            },
+            "pricing": {
+                "title": "Bulk Pricing Tiers",
+                "desc": "Transparent volume discounts directly from the manufacturer."
+            }
+        },
+        "process": {
+            "badge": "Process",
+            "title": "How It Works",
+            "steps": [
+                "Select from Curated Catalog",
+                "Request Sample & Quote",
+                "Customize (Optional)",
+                "Production & Import"
+            ]
+        },
+        "sidebar": {
+            "title": "Product Access",
+            "badge": "PREMIUM",
+            "desc": "Get immediate access to our vetted manufacturer list and product catalog. Perfect for brands ready to scale beyond generic goods.",
+            "feeLabel": "Consultation & Setup",
+            "feeValue": "$199",
+            "feeNote": "One-time fee for initial strategy & catalog access review",
+            "features": [
+                "Verified Manufacturer List",
+                "MOQ & Pricing Data",
+                "Sample Coordination",
+                "Private Label Assessment"
+            ],
+            "btn": "Discuss Product Access ($199)",
+            "request": "Request a Category Preview List",
+            "testimonial": {
+                "author": "Sarah Jenkins",
+                "role": "Founder, LuxeHome Decor",
+                "quote": "\"Amelcorp connected us with a verified packaging manufacturer in Dubai. The quality exceeded expectations, and we had full white-label control. This isn't dropshipping—it's real supply chain partnership.\"",
+                "date": "March 2025"
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "items": [
+                {
+                    "q": "How is this different from dropshipping?",
+                    "a": "We maintain direct relationships with verified manufacturers. Every product is vetted, every supplier audited. You're not buying from random vendors—you're accessing our curated network."
+                },
+                {
+                    "q": "What are typical MOQs?",
+                    "a": "Varies by category and customization level. Standard products: 100-500 units. White-label/custom: 500-2,000 units. We negotiate on your behalf."
+                },
+                {
+                    "q": "Can I request samples before ordering?",
+                    "a": "Yes. Sample coordination is included in the $199 consultation. We arrange manufacturer samples and handle shipping logistics."
+                }
+            ]
+        },
+        "footer": {
+            "title": "Ready to Access Verified Products?",
+            "desc": "Schedule your $199 consultation to review our curated catalog and discuss white-label opportunities.",
+            "btn": "Book Your $199 Consultation",
+            "request": "Request Category List"
+        }
+    },
+    "Terms": {
+        "title": "Terms of Service",
+        "lastUpdated": "Last updated: February 8, 2026",
+        "acceptance": {
+            "title": "1. Acceptance of Terms",
+            "intro": "These Terms of Service (\"Terms\") govern your access to and use of Amelcorp Logistics' services, including our website, software, and applications (collectively, the \"Services\"). By accessing or using our Services, you agree to be bound by these Terms.",
+            "agreement": "If you do not agree to these Terms, you may not access or use the Services."
+        },
+        "eligibility": {
+            "title": "2. Eligibility",
+            "age": "You must be at least 18 years old to use our Services.",
+            "authority": "By using the Services, you represent that you have the legal authority to enter into this agreement on behalf of yourself or your organization."
+        },
+        "services": {
+            "title": "3. Description of Services",
+            "intro": "Amelcorp Logistics provides global trade enablement and supply chain services, including:",
+            "items": [
+                "Supplier sourcing and verification in China, UAE, and Turkey",
+                "Import/Export trade management and logistics coordination",
+                "On-site factory audits and quality control inspections",
+                "Direct product access and curated supplier catalogs",
+                "Consulting and advisory services for international trade"
+            ],
+            "asis": "The Services are provided on an \"as-is\" and \"as-available\" basis."
+        },
+        "accounts": {
+            "title": "4. User Accounts",
+            "intro": "When creating an account, you agree to:",
+            "requirements": [
+                "Provide accurate and complete information",
+                "Maintain the security of your login credentials",
+                "Notify us immediately of any unauthorized use",
+                "Accept responsibility for all activity under your account"
+            ],
+            "responsibility": "You are solely responsible for all actions taken using your account credentials."
+        },
+        "use": {
+            "title": "5. Acceptable Use",
+            "intro": "You agree not to:",
+            "prohibited": [
+                "Violate any applicable law or regulation",
+                "Infringe intellectual property rights of others",
+                "Upload malicious code, viruses, or harmful data",
+                "Attempt unauthorized access to systems or data",
+                "Reverse engineer or exploit the Services",
+                "Use the Services for unlawful, deceptive, or abusive purposes"
+            ],
+            "enforcement": "We reserve the right to suspend or terminate your access for violations of these Terms."
+        },
+        "ip": {
+            "title": "6. Intellectual Property",
+            "ownership": "All content, software, designs, trademarks, logos, and intellectual property associated with the Services are owned by or licensed to Amelcorp Logistics.",
+            "license": "You are granted a limited, non-exclusive, non-transferable, revocable license to use the Services for lawful business purposes only. No other rights are granted except as expressly stated herein."
+        },
+        "payments": {
+            "title": "7. Payments and Fees",
+            "intro": "Certain Services may require payment. You agree that:",
+            "terms": [
+                "Fees are non-refundable unless explicitly stated otherwise",
+                "We may change pricing with reasonable prior notice",
+                "Failure to pay may result in suspension or termination of services",
+                "Payments are processed by third-party providers; we do not store full payment card details"
+            ]
+        },
+        "disclaimer": {
+            "title": "8. Disclaimer of Warranties",
+            "asis": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND.",
+            "nowarranty": "We make no warranties regarding accuracy, reliability, availability, or fitness for a particular purpose. Outputs, recommendations, and insights are informational only and not guarantees. You assume full responsibility for decisions made based on our Services."
+        },
+        "liability": {
+            "title": "9. Limitation of Liability",
+            "intro": "To the maximum extent permitted by law, Amelcorp Logistics shall not be liable for indirect, incidental, special, or consequential damages, including loss of profits, data, or business opportunities.",
+            "cap": "Our total liability shall not exceed the amount paid by you to Amelcorp Logistics in the preceding 12 months."
+        },
+        "termination": {
+            "title": "10. Termination",
+            "rights": "We may suspend or terminate your access at any time, with or without notice, for violation of these Terms, legal or security reasons, or discontinuation of Services.",
+            "effect": "Upon termination, your right to use the Services immediately ceases, and any outstanding fees remain due."
+        },
+        "law": {
+            "title": "11. Governing Law",
+            "jurisdiction": "These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to conflict of law principles. Any disputes shall be resolved through good-faith negotiation, binding arbitration, or competent courts as permitted by law."
+        },
+        "changes": {
+            "title": "12. Changes to Terms",
+            "updates": "We may update these Terms from time to time. Changes will be effective upon posting with a revised date.",
+            "acceptance": "Continued use of the Services after changes constitutes acceptance of the updated Terms."
+        },
+        "contact": {
+            "title": "13. Contact Information",
+            "intro": "For questions regarding these Terms, contact us at:"
+        }
+    },
+    "Privacy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: February 8, 2026",
+        "intro": {
+            "title": "1. Introduction",
+            "company": "Amelcorp Logistics (\"Company\", \"we\", \"our\", or \"us\") operates global trade enablement services. We are committed to protecting your privacy and ensuring transparency regarding how we collect, use, and safeguard your information.",
+            "commitment": "By accessing or using our Services, you agree to the practices described in this Privacy Policy."
+        },
+        "collect": {
+            "title": "2. Information We Collect",
+            "personal": {
+                "title": "2.1 Personal Information",
+                "intro": "We may collect personally identifiable information when you register, fill out forms, subscribe, contact us, or use our services. This may include:",
+                "items": [
+                    "Full name",
+                    "Email address",
+                    "Phone number",
+                    "Company name and business details",
+                    "Billing and payment information (processed via third-party providers)",
+                    "Shipping and logistics information",
+                    "Product specifications and sourcing requirements"
+                ]
+            },
+            "nonpersonal": {
+                "title": "2.2 Non-Personal Information",
+                "intro": "We automatically collect certain technical data, including:",
+                "items": [
+                    "IP address",
+                    "Browser type and version",
+                    "Device information",
+                    "Operating system",
+                    "Pages visited and time spent",
+                    "Referring URLs and navigation patterns"
+                ]
+            },
+            "cookies": {
+                "title": "2.3 Cookies and Tracking Technologies",
+                "intro": "We use cookies, pixels, and similar technologies to improve website performance, analyze usage, enhance user experience, and support marketing and analytics.",
+                "control": "You may disable cookies through your browser settings, though some features may not function properly."
+            }
+        },
+        "usage": {
+            "title": "3. How We Use Your Information",
+            "purposes": [
+                "Provide, operate, and maintain our Services",
+                "Process transactions and manage supplier relationships",
+                "Communicate with you (support, updates, marketing)",
+                "Improve functionality and user experience",
+                "Conduct factory audits and quality control inspections",
+                "Detect and prevent fraud or abuse",
+                "Comply with legal obligations and enforce our Terms"
+            ]
+        },
+        "legal": {
+            "title": "4. Legal Basis for Processing (GDPR)",
+            "intro": "For users in the European Economic Area (EEA), we process personal data based on:",
+            "bases": [
+                "Your consent",
+                "Contractual necessity to provide Services",
+                "Legal obligations",
+                "Legitimate business interests that do not override your rights"
+            ]
+        },
+        "sharing": {
+            "title": "5. Sharing of Information",
+            "nosell": "We do not sell your personal data.",
+            "intro": "We may share information with:",
+            "parties": [
+                "Trusted service providers (hosting, analytics, payment processing)",
+                "Suppliers and manufacturers for order fulfillment (with your consent)",
+                "Legal authorities when required by law",
+                "Business partners strictly for service delivery"
+            ]
+        },
+        "security": {
+            "title": "6. Data Security",
+            "measures": "We implement appropriate technical and organizational security measures, including secure servers, encryption, access controls, and regular system monitoring.",
+            "disclaimer": "However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security."
+        },
+        "rights": {
+            "title": "7. Your Privacy Rights",
+            "intro": "Depending on your jurisdiction, you may have the right to:",
+            "list": [
+                "Access your personal data",
+                "Correct inaccurate data",
+                "Request deletion of your data",
+                "Restrict or object to processing",
+                "Withdraw consent",
+                "Request data portability"
+            ],
+            "contact": "To exercise these rights, contact us at: contact@amelcorp.com"
+        },
+        "retention": {
+            "title": "8. Data Retention",
+            "policy": "We retain personal information only for as long as necessary to fulfill the purposes outlined in this policy and to comply with legal, accounting, or reporting obligations."
+        },
+        "international": {
+            "title": "9. International Data Transfers",
+            "transfers": "Your information may be processed outside your country of residence. We ensure appropriate safeguards are in place for international data transfers, including standard contractual clauses and data protection agreements."
+        },
+        "children": {
+            "title": "10. Children's Privacy",
+            "policy": "Amelcorp Logistics does not knowingly collect data from children under the age of 13. If such data is discovered, it will be promptly deleted."
+        },
+        "changes": {
+            "title": "11. Changes to This Privacy Policy",
+            "updates": "We may update this Privacy Policy periodically. Changes will be posted on this page with an updated revision date. Continued use of the Services after changes constitutes acceptance."
+        },
+        "contact": {
+            "title": "12. Contact Information",
+            "intro": "If you have questions or concerns about this Privacy Policy, contact us at:"
+        }
+    }
+}

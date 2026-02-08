@@ -1,0 +1,453 @@
+.industriesPage {
+    --amelcorp-blue: #0056b3;
+    --amelcorp-red: #b30000;
+    --white: #ffffff;
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1565514020176-dbf2277e3833?ixlib=rb-4.0.3&auto=format&fit=crop&w=1440&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    text-align: center;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.heroDesc {
+    font-size: 1.125rem;
+    color: var(--slate-300);
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.mainSection {
+    padding: 5rem 0;
+    background: var(--slate-50);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.industryGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.industrySection {
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--slate-200);
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+}
+
+.industrySectionReverse {
+    flex-direction: row-reverse;
+}
+
+.imageBox {
+    width: 40%;
+    position: relative;
+    height: 100%;
+}
+
+.industryImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.8), transparent);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.industrySectionReverse .imgOverlay {
+    background: linear-gradient(to left, rgba(15, 23, 42, 0.8), transparent);
+    align-items: flex-end;
+    text-align: right;
+}
+
+.industryIcon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.iconBlue {
+    background-color: #2563eb;
+}
+
+.iconPink {
+    background-color: #db2777;
+}
+
+.iconIndigo {
+    background-color: #4f46e5;
+}
+
+.industryTitle {
+    color: var(--white);
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.industrySub {
+    color: var(--slate-200);
+    font-size: 0.875rem;
+}
+
+.contentBox {
+    width: 60%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detailGrid {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detailCol {
+    flex: 1;
+}
+
+.detailTitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.detailText {
+    font-size: 0.875rem;
+    color: var(--slate-700);
+    line-height: 1.6;
+}
+
+.comparisonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.comparisonCard {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.riskCard {
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+}
+
+.standardCard {
+    background: #ecfdf5;
+    border: 1px solid #d1fae5;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.riskTitle {
+    color: #b91c1c;
+}
+
+.standardTitle {
+    color: #047857;
+}
+
+.cardList {
+    list-style: disc;
+    padding-left: 1.25rem;
+    font-size: 0.75rem;
+    color: var(--slate-600);
+}
+
+.cardList li:not(:last-child) {
+    margin-bottom: 0.375rem;
+}
+
+.footerActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--slate-100);
+    padding-top: 1.5rem;
+}
+
+.footerText {
+    font-size: 0.875rem;
+}
+
+.textSmall {
+    color: var(--slate-500);
+    display: block;
+}
+
+.textBold {
+    font-weight: 700;
+    color: var(--slate-900);
+}
+
+.btnAction {
+    background: var(--white);
+    border: 1px solid var(--amelcorp-blue);
+    color: var(--amelcorp-blue);
+    font-weight: 700;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+}
+
+.btnAction:hover {
+    background: var(--amelcorp-blue);
+    color: var(--white);
+}
+
+/* Global CTA */
+.globalCta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--amelcorp-blue), #1e40af);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.patternBox {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.ctaGrid {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ctaLeft {
+    width: 50%;
+}
+
+.ctaTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.ctaDesc {
+    font-size: 1.125rem;
+    color: var(--slate-300);
+    margin-bottom: 2rem;
+    max-width: 32rem;
+}
+
+.checkList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checkLine {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.checkCircle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #34d399;
+    font-size: 0.875rem;
+}
+
+.checkLabel {
+    color: var(--slate-200);
+}
+
+.ctaRight {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ctaCard {
+    background: var(--white);
+    color: var(--slate-900);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+    max-width: 28rem;
+    width: 100%;
+}
+
+.cardHead {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cardLead {
+    font-size: 0.875rem;
+    color: var(--slate-600);
+    margin-bottom: 1.5rem;
+}
+
+.feeBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--slate-50);
+    border: 1px solid var(--slate-100);
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.feeLabel {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.feeValue {
+    font-weight: 700;
+    color: var(--amelcorp-blue);
+}
+
+.btnFullRed {
+    display: block;
+    width: 100%;
+    background: var(--amelcorp-red);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 15px -3px rgba(179, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.btnFullRed:hover {
+    transform: translateY(-2px);
+    background: #990000;
+}
+
+.cardFoot {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--slate-500);
+    margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    .industrySection,
+    .industrySectionReverse {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imageBox,
+    .contentBox {
+        width: 100%;
+    }
+
+    .imageBox {
+        height: 300px;
+    }
+
+    .ctaGrid {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .ctaLeft,
+    .ctaRight {
+        width: 100%;
+    }
+
+    .ctaRight {
+        justify-content: center;
+    }
+}

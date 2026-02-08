@@ -1,0 +1,123 @@
+.legalPage {
+    font-family: var(--font-sans);
+    color: var(--text-main);
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0056b3, #1e40af);
+    padding: 6rem 0 4rem;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.heroTitle {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: var(--space-3);
+}
+
+.lastUpdated {
+    color: #cbd5e1;
+    font-size: 0.875rem;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-16) var(--space-6);
+}
+
+.section {
+    margin-bottom: var(--space-12);
+}
+
+.sectionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.subsectionTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #334155;
+    margin: var(--space-6) 0 var(--space-3);
+}
+
+.section p {
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: var(--space-4);
+}
+
+.list {
+    list-style: disc;
+    padding-left: var(--space-8);
+    margin-bottom: var(--space-4);
+}
+
+.list li {
+    color: #475569;
+    line-height: 1.75;
+    margin-bottom: var(--space-2);
+}
+
+.important {
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: var(--space-4);
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #92400e;
+}
+
+.contactInfo {
+    background-color: #f8fafc;
+    padding: var(--space-6);
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.contactInfo p {
+    margin-bottom: var(--space-2);
+}
+
+.contactInfo a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contactInfo a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0 3rem;
+        margin-top: 60px;
+    }
+
+    .heroTitle {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: var(--space-12) var(--space-4);
+    }
+
+    .sectionTitle {
+        font-size: 1.25rem;
+    }
+
+    .subsectionTitle {
+        font-size: 1rem;
+    }
+}

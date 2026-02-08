@@ -1,0 +1,568 @@
+.whyPage {
+    --amelcorp-blue: #0056b3;
+    --amelcorp-red: #b30000;
+    --white: #ffffff;
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+.hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1440&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.highlight {
+    color: #60a5fa;
+}
+
+.heroDesc {
+    font-size: 1.125rem;
+    color: var(--slate-300);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.heroTrust {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.trustItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.trustIcon {
+    color: #10b981;
+}
+
+.heroSidebar {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.fraudBadge {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    background: var(--amelcorp-red);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.fraudValue {
+    font-size: 1.875rem;
+    font-weight: 700;
+    display: block;
+}
+
+.fraudLabel {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebarTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebarItem {
+    display: flex;
+    gap: 1rem;
+}
+
+.sidebarIconBox {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60a5fa;
+    flex-shrink: 0;
+}
+
+.sidebarItemTitle {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.25rem;
+}
+
+.sidebarItemDesc {
+    font-size: 0.75rem;
+    color: var(--slate-400);
+    line-height: 1.5;
+}
+
+/* Positioning Matrix */
+.matrixSection {
+    padding: 5rem 0;
+    background: var(--slate-50);
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--slate-900);
+}
+
+.sectionDesc {
+    color: var(--slate-600);
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.matrixGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.matrixCard {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid transparent;
+}
+
+.doCard {
+    border-top-color: #10b981;
+}
+
+.dontCard {
+    border-top-color: var(--amelcorp-red);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.headerIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doIcon {
+    background: #ecfdf5;
+    color: #10b981;
+}
+
+.dontIcon {
+    background: #fef2f2;
+    color: var(--amelcorp-red);
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--slate-900);
+}
+
+.cardList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.listItem {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--slate-700);
+}
+
+.listIcon {
+    margin-top: 0.25rem;
+}
+
+.doListItem .listIcon {
+    color: #10b981;
+}
+
+.dontListItem .listIcon {
+    color: #f87171;
+}
+
+/* How We Work */
+.methodologySection {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.methodologyHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+}
+
+.headerLeft {
+    flex: 1;
+}
+
+.headerRight {
+    flex: 1;
+    text-align: right;
+    font-size: 0.875rem;
+    color: var(--slate-600);
+    max-width: 28rem;
+}
+
+.methodLabel {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--amelcorp-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.processTimeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 4rem;
+}
+
+.timelineLine {
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--slate-200);
+}
+
+.stepWrapper {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.stepWrapper:last-child {
+    margin-bottom: 0;
+}
+
+.stepNumber {
+    position: absolute;
+    left: -3.5rem;
+    width: 3rem;
+    height: 3rem;
+    background: var(--white);
+    border: 2px solid var(--slate-200);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--slate-400);
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.stepWrapper:hover .stepNumber {
+    border-color: var(--amelcorp-blue);
+    color: var(--amelcorp-blue);
+}
+
+.stepContent {
+    background: var(--slate-50);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--slate-100);
+    transition: all 0.3s;
+}
+
+.stepWrapper:hover .stepContent {
+    box-shadow: var(--shadow-md);
+}
+
+.stepHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.stepTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--slate-900);
+}
+
+.stepTime {
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.stepDesc {
+    font-size: 0.875rem;
+    color: var(--slate-600);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.stepBadges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.stepBadge {
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: var(--white);
+    color: var(--slate-500);
+    border: 1px solid var(--slate-200);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Partners */
+.partnersSection {
+    padding: 6rem 0;
+    background: var(--slate-900);
+    color: var(--white);
+}
+
+.partnersHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.partnersGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.partnerCard {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s;
+}
+
+.partnerCard:hover {
+    transform: translateY(-5px);
+}
+
+.partnerIcon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blueIcon {
+    color: #60a5fa;
+}
+
+.emeraldIcon {
+    color: #10b981;
+}
+
+.purpleIcon {
+    color: #a78bfa;
+}
+
+.orangeIcon {
+    color: #fb923c;
+}
+
+.partnerTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.partnerDesc {
+    font-size: 0.75rem;
+    color: var(--slate-400);
+    line-height: 1.5;
+}
+
+/* Final CTA */
+.finalCta {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--amelcorp-blue), #1e40af);
+    text-align: center;
+    color: var(--white);
+}
+
+.ctaTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.ctaDesc {
+    font-size: 1.125rem;
+    color: #dbeafe;
+    max-width: 42rem;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.ctaBtn {
+    background: var(--amelcorp-red);
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 10px 25px rgba(179, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+.ctaBtn:hover {
+    background: #990000;
+    transform: translateY(-2px);
+}
+
+.ctaTrust {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 0.875rem;
+    color: #93c5fd;
+}
+
+@media (max-width: 1024px) {
+
+    .heroGrid,
+    .matrixGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .partnersGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .methodologyHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .headerRight {
+        text-align: left;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .fraudBadge {
+        right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .partnersGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaTrust {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

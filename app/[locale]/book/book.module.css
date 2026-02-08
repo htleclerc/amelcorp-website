@@ -1,0 +1,1281 @@
+.bookingPage {
+    --amelcorp-blue: #0056b3;
+    --amelcorp-red: #b30000;
+    --amelcorp-dark: #0f172a;
+    --amelcorp-light: #f8fafc;
+    --amelcorp-gray: #64748b;
+    --amelcorp-surface: #F1F5F9;
+    --amelcorp-gold: #D97706;
+    --white: #ffffff;
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+
+    min-height: 100vh;
+    background-color: var(--slate-50);
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Progress Steps */
+/* Progress Steps */
+.progressContainer {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.progressLine {
+    position: absolute;
+    top: 3.125rem;
+    left: 6rem;
+    right: 6rem;
+    height: 4px;
+    background-color: var(--slate-200);
+    z-index: 1;
+}
+
+.progressLineActive {
+    height: 100%;
+    background-color: var(--amelcorp-blue);
+    transition: width 0.3s ease;
+}
+
+.stepsWrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0;
+    width: 8rem;
+}
+
+.stepNumber {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border: 2px solid var(--slate-300);
+    background-color: var(--white);
+    color: var(--slate-400);
+    transition: all 0.3s ease;
+    line-height: 1;
+    padding: 0;
+}
+
+.stepActive .stepNumber {
+    background-color: var(--amelcorp-blue);
+    border-color: var(--amelcorp-blue);
+    color: var(--white);
+    box-shadow: 0 0 0 4px rgba(0, 86, 179, 0.1);
+}
+
+.stepCompleted .stepNumber {
+    background-color: var(--amelcorp-blue);
+    border-color: var(--amelcorp-blue);
+    color: var(--white);
+}
+
+.stepLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stepActive .stepLabel,
+.stepCompleted .stepLabel {
+    color: var(--amelcorp-blue);
+}
+
+/* Form Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Left Sidebar Card */
+.sidebarCard {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    border: 1px solid var(--slate-200);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 8rem;
+}
+
+.sidebarTitle {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--slate-900);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.sidebarDesc {
+    color: var(--slate-600);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.benefitList {
+    border-top: 1px solid var(--slate-100);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.benefitItem {
+    display: flex;
+    gap: 1rem;
+}
+
+.benefitIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #eff6ff;
+    color: var(--amelcorp-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefitText h4 {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: var(--slate-800);
+    margin-bottom: 0.25rem;
+}
+
+.benefitText p {
+    font-size: 0.75rem;
+    color: var(--slate-500);
+    line-height: 1.4;
+}
+
+.sidebarNote {
+    margin-top: 2rem;
+    background-color: #fffbeb;
+    border: 1px solid #fef3c7;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.sidebarNote i {
+    color: #d97706;
+    margin-top: 0.125rem;
+}
+
+.sidebarNote p {
+    font-size: 0.75rem;
+    color: #92400e;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Main Form Card */
+.formCard {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    border: 1px solid var(--slate-200);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.formHeader {
+    background-color: var(--slate-50);
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid var(--slate-100);
+}
+
+.formHeader h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--slate-900);
+}
+
+.formHeader p {
+    font-size: 0.875rem;
+    color: var(--slate-500);
+    margin-top: 0.25rem;
+}
+
+.formBody {
+    padding: 2.5rem;
+}
+
+.formSections {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sectionGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sectionLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sectionLabelDot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--amelcorp-blue);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formControlFull {
+    grid-column: span 2;
+}
+
+.label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--slate-700);
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--slate-300);
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    color: var(--slate-900);
+    background-color: var(--white);
+    transition: all 0.2s;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: var(--amelcorp-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sidebarCard {
+        position: static;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .progressContainer {
+        padding: 1.5rem 1rem;
+    }
+
+    /* On mobile, steps are smaller */
+    .step {
+        width: auto;
+        min-width: 4rem;
+    }
+
+    .progressLine {
+        left: 2rem;
+        right: 2rem;
+    }
+
+    /* Step 2 Mobile */
+    .step2Grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .calendarBox {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .checklistCard {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .stepLabel {
+        display: none;
+        /* Hide labels on very small screens if needed, or reduce size */
+    }
+
+    .stepNumber {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    /* Adjust progress line for smaller circles */
+    .progressLine {
+        top: 2.75rem;
+        /* Adjusted for smaller circle height/margin */
+    }
+}
+
+
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: var(--amelcorp-blue);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 3rem;
+}
+
+/* Radio Cards */
+.radioGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.radioCard {
+    cursor: pointer;
+    position: relative;
+}
+
+.radioInput {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radioUI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+    border: 2px solid var(--slate-200);
+    border-radius: 0.75rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.radioInput:checked+.radioUI {
+    border-color: var(--amelcorp-blue);
+    background-color: #eff6ff;
+}
+
+.radioTitle {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--slate-700);
+}
+
+.radioInput:checked+.radioUI .radioTitle {
+    color: var(--amelcorp-blue);
+}
+
+.radioSub {
+    font-size: 0.7rem;
+    color: var(--slate-500);
+    margin-top: 0.25rem;
+}
+
+/* Form Helper Area */
+.helperBox {
+    background-color: #eff6ff;
+    border: 1px solid #dbeafe;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.helperIcon {
+    color: var(--amelcorp-blue);
+    font-size: 1.25rem;
+    margin-top: 0.125rem;
+}
+
+.helperText h4 {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 0.25rem;
+}
+
+.helperText p {
+    font-size: 0.75rem;
+    color: #1e40af;
+    line-height: 1.5;
+}
+
+/* Form Actions */
+.formFooter {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--slate-50);
+    border-top: 1px solid var(--slate-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--slate-500);
+    transition: color 0.2s ease;
+}
+
+.backBtn:hover {
+    color: var(--slate-800);
+}
+
+.submitBtn {
+    background-color: var(--amelcorp-red);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 4px 12px rgba(179, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background-color: #990000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.25);
+}
+
+.secondaryBtn {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--slate-200);
+    border-radius: 0.75rem;
+    font-weight: 600;
+    color: var(--slate-600);
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.secondaryBtn:hover:not(:disabled) {
+    border-color: var(--slate-300);
+    color: var(--slate-900);
+    background: var(--slate-50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.formFooterStep2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    background-color: var(--slate-50);
+    border-top: 1px solid var(--slate-100);
+}
+
+.btnGroupFull {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.selectionTextBottom {
+    text-align: center;
+    font-size: 0.8125rem;
+    color: var(--slate-500);
+    border-top: 1px solid var(--slate-200);
+    padding-top: 1rem;
+}
+
+/* Step 2 specific items */
+.summaryHeader {
+    background-color: var(--slate-50);
+    padding: 1rem 1.5rem;
+}
+
+.summaryHeader h3 {
+    font-size: 0.9375rem;
+    font-weight: 800;
+    color: var(--slate-900);
+}
+
+.summaryBody {
+    padding: 1.5rem;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.orderItem h4 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--slate-900);
+}
+
+.orderItem p {
+    font-size: 0.75rem;
+    color: var(--slate-500);
+    margin-top: 0.25rem;
+}
+
+.orderPrice {
+    text-align: right;
+}
+
+.priceBig {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--slate-900);
+    display: block;
+}
+
+.currency {
+    font-size: 0.7rem;
+    color: var(--slate-400);
+    font-weight: 700;
+}
+
+.whatsIncluded {
+    margin-top: 2rem;
+}
+
+.includedLabel {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.includedList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.includedItem {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--slate-600);
+}
+
+.includedItem i {
+    color: #10b981;
+    font-size: 0.75rem;
+}
+
+.creditBox {
+    margin-top: 2rem;
+    background-color: #eff6ff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.creditIcon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    color: var(--amelcorp-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.creditText h5 {
+    font-size: 0.8125rem;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin-bottom: 0.25rem;
+}
+
+.creditText p {
+    font-size: 0.7rem;
+    color: #1e40af;
+    line-height: 1.4;
+}
+
+.brandLogos {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    color: var(--slate-400);
+}
+
+/* Payment Fields */
+.paymentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secureBadge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    background-color: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--slate-500);
+}
+
+.pulse {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #10b981;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.methodTabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.methodTab {
+    cursor: pointer;
+}
+
+.methodUI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 2px solid var(--slate-200);
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--slate-600);
+    transition: all 0.2s ease;
+}
+
+.radioInput:checked+.methodUI {
+    border-color: var(--amelcorp-blue);
+    background-color: #eff6ff;
+    color: var(--amelcorp-blue);
+}
+
+.cardFields {
+    margin-top: 1.5rem;
+    background-color: var(--slate-50);
+    border: 1px solid var(--slate-200);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.fieldWithIcons {
+    position: relative;
+}
+
+.fieldIcons {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--slate-300);
+}
+
+.termsBox {
+    background-color: #fffaf5;
+    border: 1px solid #ffedd5;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.checkboxLabel {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.checkboxText {
+    font-size: 0.75rem;
+    color: var(--slate-700);
+    line-height: 1.6;
+}
+
+/* Step 2: Scheduling */
+.schedulingGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step2Grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.calendarBox {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.calendarView {
+    flex: 1;
+}
+
+.calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.monthLabel {
+    font-weight: 800;
+    color: var(--slate-800);
+}
+
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.dayName {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--slate-400);
+    text-transform: uppercase;
+}
+
+.day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.day:hover:not(.disabled):not(.selected) {
+    background-color: var(--slate-100);
+    color: var(--amelcorp-blue);
+}
+
+.daySelected {
+    background-color: var(--amelcorp-blue);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
+}
+
+.dayDisabled {
+    color: var(--slate-300);
+    cursor: not-allowed;
+}
+
+.timeSlotsView {
+    width: 200px;
+}
+
+.slotsTitle {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.slotsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.slot {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--slate-200);
+    border-radius: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--slate-600);
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.slot:hover:not(.slotSelected) {
+    border-color: var(--amelcorp-blue);
+    color: var(--amelcorp-blue);
+}
+
+.slotSelected {
+    border-color: var(--amelcorp-blue);
+    background-color: var(--amelcorp-blue);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.2);
+}
+
+.footerSelection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.selectionText {
+    font-size: 0.8125rem;
+    color: var(--slate-500);
+}
+
+/* Checklist Cards on Step 3 */
+.checklistCard {
+    background-color: var(--white);
+    border: 1px solid var(--slate-200);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.checklistHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.checklistIconBox {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    background-color: #fff7ed;
+    color: var(--amelcorp-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.checklistItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.checklistItem {
+    background-color: var(--slate-50);
+    border: 1px solid var(--slate-100);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.itemInfo h4 {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: var(--slate-800);
+}
+
+.itemInfo p {
+    font-size: 0.75rem;
+    color: var(--slate-500);
+    margin-top: 0.125rem;
+}
+
+/* Outcome Paths */
+.outcomePath {
+    border: 1px solid var(--slate-200);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.pathNumber {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.num1 {
+    background-color: var(--slate-100);
+    color: var(--slate-600);
+}
+
+.num2 {
+    background-color: #fff7ed;
+    color: #ea580c;
+}
+
+.num3 {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+.pathInfo h4 {
+    font-size: 0.875rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+}
+
+.pathInfo p {
+    font-size: 0.75rem;
+    color: var(--slate-600);
+    line-height: 1.5;
+}
+
+.secondaryBtn {
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--slate-200);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: var(--slate-600);
+    background: white;
+    transition: all 0.2s ease;
+}
+
+.secondaryBtn:hover:not(:disabled) {
+    border-color: var(--slate-400);
+    color: var(--slate-900);
+    background: var(--slate-50);
+}
+
+.secondaryBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.methodTab.active .methodUI {
+    border-color: var(--amelcorp-blue);
+    background-color: #eff6ff;
+    color: var(--amelcorp-blue);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+}
+
+.heroSection {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.85) 100%);
+    backdrop-filter: blur(12px);
+    padding: 6rem 0;
+    color: white;
+    border-radius: 0 0 3rem 3rem;
+    margin-bottom: -4rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--slate-300);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Success Card */
+.successCard {
+    background: white;
+    border-radius: 2rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.successIcon {
+    width: 5rem;
+    height: 5rem;
+    background: #10b981;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+.successCard h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--slate-900);
+    margin-bottom: 1rem;
+}
+
+.successCard p {
+    color: var(--slate-600);
+    max-width: 500px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.successMeta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    background: var(--slate-50);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.metaItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.metaLabel {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--slate-400);
+    text-transform: uppercase;
+}
+
+.metaValue {
+    font-size: 0.9375rem;
+    font-weight: 800;
+    color: var(--slate-800);
+}
+
+.successNote {
+    font-size: 0.875rem;
+    color: var(--slate-500) !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.homeBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    background: var(--amelcorp-blue);
+    color: white;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.homeBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 86, 179, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .step2Grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebarCard {
+        position: static;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .formCard {
+        width: 100%;
+    }
+
+    .calendarBox {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .timeSlotsView {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .checklistCard {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .radioGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .formControlFull {
+        grid-column: span 1;
+    }
+
+    .methodTabs {
+        grid-template-columns: 1fr;
+    }
+
+    .selectionText {
+        display: none;
+    }
+}

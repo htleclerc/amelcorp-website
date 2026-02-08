@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Booking {
+  id                String   @id @default(cuid())
+  fullName          String?
+  email             String?
+  phone             String?
+  companyName       String?
+  businessStructure String?
+  primaryIndustry   String?
+  orderValue        String?
+  targetCountry     String?
+  launchTimeline    String?
+  date              String?  // Format: YYYY-MM-DD
+  timeSlot          String?  // Format: HH:mm
+  status            String   @default("qualification") // qualification, scheduled, cancelled
+  paymentStatus     String   @default("unpaid") // unpaid, paid, pay_later
+  paymentMethod     String?  // stripe, paypal
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
