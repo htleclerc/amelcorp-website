@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import styles from './Hero.module.css';
+import { ASSETS, ROUTES } from '@/lib/constants';
 
 const Hero = () => {
     const t = useTranslations('Hero');
@@ -11,12 +12,13 @@ const Hero = () => {
             {/* Background Image using Next.js Image for optimization */}
             <div className={styles.bgWrapper}>
                 <Image
-                    src="/assets/hero_bg.png"
+                    src={ASSETS.HERO_BG}
                     alt="Global Sourcing Background"
                     fill
                     priority
                     quality={85}
                     style={{ objectFit: 'cover' }}
+                    sizes="100vw"
                 />
             </div>
             <div className={styles.overlay}></div>
@@ -25,18 +27,18 @@ const Hero = () => {
                     <div className={styles.badge}>{t('badge')}</div>
                     <h1 className={styles.title}>
                         {t.rich('title', {
-                            br: (chunks) => <br />,
-                            highlight: (chunks) => <span className={styles.highlight}>{chunks}</span>
+                            br: (chunks) => <br key="br" />,
+                            highlight: (chunks) => <span key="highlight" className={styles.highlight}>{chunks}</span>
                         })}
                     </h1>
                     <p className={styles.description}>
                         {t('description')}
                     </p>
                     <div className={styles.actions}>
-                        <Link href="/book" className={`btn btn-blue ${styles.primaryBtn}`}>
+                        <Link href={ROUTES.BOOK} className={`btn btn-blue ${styles.primaryBtn}`}>
                             {t('primaryCta')}
                         </Link>
-                        <Link href="/services-overview" className={`btn ${styles.secondaryBtn}`}>
+                        <Link href={ROUTES.SERVICES} className={`btn ${styles.secondaryBtn}`}>
                             {t('secondaryCta')}
                         </Link>
                     </div>

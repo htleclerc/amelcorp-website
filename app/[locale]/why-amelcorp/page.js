@@ -177,7 +177,7 @@ export default function WhyAmelcorpPage() {
                     desc={t('cta.desc')}
                     primaryCtaText={t('cta.btn')}
                     primaryCtaLink="/book"
-                    variant="dark"
+                    variant="blue"
                 />
             </main>
 

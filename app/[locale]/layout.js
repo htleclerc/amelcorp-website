@@ -17,8 +17,29 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-  title: "Amelcorp Logistics Inc",
-  description: "Sourcing Intelligence, Not Just Logistics.",
+  title: "Amelcorp Logistics Inc | Sourcing Intelligence",
+  description: "Sourcing Intelligence, Not Just Logistics. We bridge the gap between global demand and reliable supply chains with expert sourcing and QC services.",
+  openGraph: {
+    title: "Amelcorp Logistics Inc",
+    description: "Sourcing Intelligence, Not Just Logistics.",
+    url: "https://armelcorp.com",
+    siteName: "Amelcorp",
+    images: [
+      {
+        url: "/assets/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amelcorp Logistics Inc",
+    description: "Sourcing Intelligence, Not Just Logistics.",
+    images: ["/assets/og-image.png"],
+  },
 };
 
 export default async function RootLayout({ children, params }) {

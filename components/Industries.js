@@ -1,50 +1,44 @@
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
 import styles from './Industries.module.css';
+import SectionHeader from './ui/SectionHeader';
+import Card from './ui/Card';
+import { ASSETS, ROUTES } from '@/lib/constants';
 
 const Industries = () => {
     const t = useTranslations('Industries');
     const items = t.raw('items');
 
     const industryImages = [
-        "/assets/industry_electronics.png",
-        "/assets/industry_beauty.png",
-        "/assets/industry_textile.png"
+        ASSETS.INDUSTRIES.ELECTRONICS,
+        ASSETS.INDUSTRIES.BEAUTY,
+        ASSETS.INDUSTRIES.TEXTILE
     ];
 
     const industryLinks = [
-        "/industries#electronics",
-        "/industries#beauty",
-        "/industries#textiles"
+        `${ROUTES.INDUSTRIES}#electronics`,
+        `${ROUTES.INDUSTRIES}#beauty`,
+        `${ROUTES.INDUSTRIES}#textiles`
     ];
 
     return (
         <section className={styles.section} id="industries">
             <div className={`container ${styles.container}`}>
-                <div className={styles.header}>
-                    <span className={styles.label}>{t('label')}</span>
-                    <h2 className={styles.title}>{t('title')}</h2>
-                    <p className={styles.subtitle}>{t('subtitle')}</p>
-                </div>
+                <SectionHeader
+                    label={t('label')}
+                    title={t('title')}
+                    subtitle={t('subtitle')}
+                />
 
                 <div className={styles.grid}>
                     {items.map((item, index) => (
-                        <div key={index} className={styles.card}>
-                            <div className={styles.imagePlaceholder}>
-                                <Image
-                                    src={industryImages[index] || industryImages[0]}
-                                    alt={item.title}
-                                    fill
-                                    style={{ objectFit: 'cover' }}
-                                />
-                            </div>
-                            <div className={styles.cardContent}>
-                                <h3 className={styles.cardTitle}>{item.title}</h3>
-                                <p className={styles.cardDesc}>{item.desc}</p>
-                                <Link href={industryLinks[index] || "/industries"} className={styles.link}>{t('exploreLink')}</Link>
-                            </div>
-                        </div>
+                        <Card
+                            key={index}
+                            image={industryImages[index] || industryImages[0]}
+                            title={item.title}
+                            description={item.desc}
+                            link={industryLinks[index] || ROUTES.INDUSTRIES}
+                            linkText={t('exploreLink')}
+                        />
                     ))}
                 </div>
             </div>

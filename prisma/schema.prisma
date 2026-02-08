@@ -6,8 +6,9 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model Booking {
@@ -28,4 +29,10 @@ model Booking {
   paymentMethod     String?  // stripe, paypal
   createdAt         DateTime @default(now())
   updatedAt         DateTime @updatedAt
+}
+
+model ContactAttempt {
+  id        String   @id @default(cuid())
+  email     String
+  createdAt DateTime @default(now())
 }

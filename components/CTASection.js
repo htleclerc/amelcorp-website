@@ -43,7 +43,7 @@ const CTASection = ({
                 <h2 className={styles.ctaTitle}>{title}</h2>
                 <p className={styles.ctaDesc}>{desc}</p>
                 <div className={styles.ctaActions}>
-                    <Link href={primaryCtaLink} className={`btn ${variant === 'white' ? styles.btnDark : styles.btnWhite}`}>
+                    <Link href={primaryCtaLink} className={`btn ${variant === 'white' ? styles.btnDark : 'btn-primary'}`}>
                         {primaryCtaText}
                     </Link>
                     {secondaryCtaText && (

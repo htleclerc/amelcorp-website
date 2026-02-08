@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3100",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && (if [ \"$SKIP_DB_PUSH\" != \"true\" ]; then prisma db push --accept-data-loss; else echo 'Skipping DB push'; fi) && next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,7 +14,8 @@
     "next-intl": "^4.8.2",
     "nodemailer": "^8.0.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-google-recaptcha": "^3.1.0"
   },
   "devDependencies": {
     "@prisma/client": "^6.2.1",

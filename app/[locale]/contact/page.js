@@ -1,16 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import styles from './contact.module.css';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function ContactPage() {
     const t = useTranslations('Contact');
+    const recaptchaRef = useRef(null);
 
-    // Default values matched with translation keys/values
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -25,14 +26,92 @@ export default function ContactPage() {
         details: ''
     });
 
+    const [status, setStatus] = useState({ type: '', message: '' });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showToast, setShowToast] = useState(false);
+
+    useEffect(() => {
+        if (showToast) {
+            const timer = setTimeout(() => setShowToast(false), 5000);
+            return () => clearTimeout(timer);
+        }
+    }, [showToast]);
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus({ type: '', message: '' });
+        setShowToast(false);
+
+        const captchaToken = recaptchaRef.current.getValue();
+        if (!captchaToken) {
+            setStatus({ type: 'error', message: 'Please complete the CAPTCHA' });
+            setShowToast(true);
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...formData, captchaToken }),
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                setStatus({ type: 'success', message: 'Thank you! Your inquiry has been sent.' });
+                setShowToast(true);
+                setFormData({
+                    fullName: '',
+                    email: '',
+                    phone: '',
+                    companyName: '',
+                    businessType: 'llc',
+                    industry: 'electronics',
+                    country: 'China',
+                    orderValue: 'Under $5,000',
+                    timeline: 'Immediate (0-30 days)',
+                    volume: 'Prototype / Sample Only',
+                    details: ''
+                });
+                recaptchaRef.current.reset();
+            } else {
+                setStatus({ type: 'error', message: data.error || 'Something went wrong. Please try again.' });
+                setShowToast(true);
+            }
+        } catch (err) {
+            setStatus({ type: 'error', message: 'A network error occurred. Please try again later.' });
+            setShowToast(true);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <div className={styles.contactPage}>
             <Header />
+
+            {showToast && (
+                <div className={`${styles.toast} ${status.type === 'success' ? styles.toastSuccess : styles.toastError}`}>
+                    <div className={`${styles.toastIcon} ${status.type === 'success' ? styles.toastIconSuccess : styles.toastIconError}`}>
+                        <i className={`fa-solid ${status.type === 'success' ? 'fa-check' : 'fa-xmark'}`}></i>
+                    </div>
+                    <div className={styles.toastContent}>
+                        <h5>{status.type === 'success' ? 'Success' : 'Error'}</h5>
+                        <p>{status.message}</p>
+                    </div>
+                    <button className={styles.closeToast} onClick={() => setShowToast(false)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--slate-400)', marginLeft: '1rem' }}>
+                        <i className="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            )}
 
             <main className={styles.container}>
                 <div className={styles.hero}>
@@ -82,20 +161,6 @@ export default function ContactPage() {
                                 </div>
                             </div>
                         </div>
-
-                        {/* 
-                        <div className={styles.inquiriesCard}>
-                            <h3>{t('inquiries.title')}</h3>
-                            <p>{t('inquiries.desc')} <a href="mailto:partners@amelcorp.com" className="text-blue-600 underline">partners@amelcorp.com</a></p>
-                            <div className={styles.person}>
-                                <img src="/assets/team/steeve.png" alt={t('inquiries.person.name')} className={styles.personImg} />
-                                <div className={styles.personInfo}>
-                                    <p>{t('inquiries.person.name')}</p>
-                                    <p>{t('inquiries.person.role')}</p>
-                                </div>
-                            </div>
-                        </div>
-                        */}
                     </aside>
 
                     {/* Right Column */}
@@ -112,17 +177,17 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <form className={styles.formBody}>
+                            <form className={styles.formBody} onSubmit={handleSubmit}>
                                 <section>
                                     <h4 className={styles.sectionHeader}>{t('form.sections.business')}</h4>
                                     <div className={styles.formGrid}>
                                         <div className={styles.formControl}>
                                             <label className={styles.label}>{t('form.fields.fullName')}</label>
-                                            <input type="text" name="fullName" placeholder="John Doe" className={styles.input} value={formData.fullName} onChange={handleInputChange} />
+                                            <input type="text" name="fullName" placeholder="John Doe" className={styles.input} value={formData.fullName} onChange={handleInputChange} required />
                                         </div>
                                         <div className={styles.formControl}>
                                             <label className={styles.label}>{t('form.fields.email')}</label>
-                                            <input type="email" name="email" placeholder="john@company.com" className={styles.input} value={formData.email} onChange={handleInputChange} />
+                                            <input type="email" name="email" placeholder="john@company.com" className={styles.input} value={formData.email} onChange={handleInputChange} required />
                                         </div>
                                         <div className={styles.formControl}>
                                             <label className={styles.label}>{t('form.fields.phone')}</label>
@@ -218,13 +283,26 @@ export default function ContactPage() {
                                     <textarea name="details" rows="3" placeholder={t('form.fields.detailsPlaceholder')} className={styles.textarea} value={formData.details} onChange={handleInputChange}></textarea>
                                 </section>
 
+                                <div style={{ margin: '1.5rem 0' }}>
+                                    <ReCAPTCHA
+                                        ref={recaptchaRef}
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                                    />
+                                </div>
+
+                                {status.message && (
+                                    <div className={status.type === 'success' ? styles.successMsg : styles.errorMsg}>
+                                        {status.message}
+                                    </div>
+                                )}
+
                                 <footer className={styles.formFooter}>
                                     <div className={styles.lockIcon}>
                                         <i className="fa-solid fa-lock"></i>
                                         <span>{t('form.footer.secure')}</span>
                                     </div>
-                                    <button type="submit" className={styles.submitBtn}>
-                                        {t('form.footer.submit')}
+                                    <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
+                                        {isSubmitting ? 'Sending...' : t('form.footer.submit')}
                                     </button>
                                 </footer>
                             </form>

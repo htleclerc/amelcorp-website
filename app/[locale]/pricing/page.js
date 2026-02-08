@@ -197,8 +197,8 @@ export default function PricingPage() {
                     primaryCtaText={t('cta.primary')}
                     primaryCtaLink="/book"
                     secondaryCtaText={t('cta.secondary')}
-                    secondaryCtaLink="/book"
-                    variant="red"
+                    secondaryCtaLink="/contact"
+                    variant="blue"
                 />
             </main>
 
