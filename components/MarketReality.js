@@ -16,24 +16,34 @@ const MarketReality = () => {
     return (
         <section className={styles.section} id="why-us">
             <div className={`container ${styles.container}`}>
-                <SectionHeader
-                    label={t('label')}
-                    title={t.rich('title', { br: () => <br /> })}
-                    subtitle={t('description')}
-                />
-
-                <div className={styles.cards}>
-                    {cards.map((card, index) => (
-                        <Card
-                            key={index}
-                            icon={card.icon}
-                            title={card.title}
-                            description={card.text}
-                        />
-                    ))}
+                <div className={styles.leftCol}>
+                    <span className={styles.label}>{t('label')}</span>
+                    <h2 className={styles.title}>
+                        {t.rich('title', {
+                            br: () => <br className={styles.desktopBr} />
+                        })}
+                    </h2>
+                    <p className={styles.description}>{t('description')}</p>
+                    <div className={styles.desktopLink}>
+                        <Link href="#risk" className={styles.link}>{t('riskLink')}</Link>
+                    </div>
                 </div>
-                <div className={styles.footerLink}>
-                    <Link href="#risk" className={styles.link}>{t('riskLink')}</Link>
+
+                <div className={styles.rightCol}>
+                    <div className={styles.cards}>
+                        {cards.map((card, index) => (
+                            <div className={styles.card} key={index}>
+                                <div className={styles.iconContainer}>
+                                    <span className={styles.icon}>{card.icon}</span>
+                                </div>
+                                <h3 className={styles.cardTitle}>{card.title}</h3>
+                                <p className={styles.cardText}>{card.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={styles.mobileLink}>
+                        <Link href="#risk" className={styles.link}>{t('riskLink')}</Link>
+                    </div>
                 </div>
             </div>
         </section>

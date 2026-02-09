@@ -12,8 +12,15 @@ const Header = () => {
     const locale = useLocale();
     const pathname = usePathname();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
-    const locales = ['en', 'fr', 'es'];
+    const locales = [
+        { code: 'en', flag: '🇺🇸', name: 'English' },
+        { code: 'fr', flag: '🇫🇷', name: 'Français' },
+        { code: 'es', flag: '🇪🇸', name: 'Español' }
+    ];
+
+    const currentLocaleObj = locales.find(l => l.code === locale) || locales[0];
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!mobileMenuOpen);
@@ -47,12 +54,6 @@ const Header = () => {
 
                 <nav className={styles.nav}>
                     <Link
-                        href="/"
-                        className={`${styles.navLink} ${isActive('/') ? styles.navLinkActive : ''}`}
-                    >
-                        {t('home')}
-                    </Link>
-                    <Link
                         href="/services-overview"
                         className={`${styles.navLink} ${isActive('/services-overview') ? styles.navLinkActive : ''}`}
                     >
@@ -84,19 +85,37 @@ const Header = () => {
                     </Link>
                 </nav>
 
+                <Link href="/book" className={styles.mobileBookIcon} title={ct('bookConsultation')}>
+                    <i className="fa-solid fa-calendar-check"></i>
+                </Link>
+
                 <div className={styles.cta}>
-                    <div className={styles.langSwitcher}>
-                        {locales.map((cur) => (
-                            <Link
-                                key={cur}
-                                href={pathname}
-                                locale={cur}
-                                className={`${styles.langBtn} ${locale === cur ? styles.langBtnActive : ''}`}
-                            >
-                                {cur}
-                            </Link>
-                        ))}
+                    <div
+                        className={styles.langDropdownContainer}
+                        onMouseEnter={() => setLangDropdownOpen(true)}
+                        onMouseLeave={() => setLangDropdownOpen(false)}
+                    >
+                        <button className={styles.langDropdownTrigger}>
+                            <i className={`fa-solid fa-globe ${styles.globeIcon}`}></i>
+                        </button>
+
+                        {langDropdownOpen && (
+                            <div className={styles.langDropdownMenu}>
+                                {locales.map((loc) => (
+                                    <Link
+                                        key={loc.code}
+                                        href={pathname}
+                                        locale={loc.code}
+                                        className={`${styles.langDropdownItem} ${locale === loc.code ? styles.langItemActive : ''}`}
+                                    >
+                                        <span className={styles.flag}>{loc.flag}</span>
+                                        <span className={styles.langFullName}>{loc.name}</span>
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
                     </div>
+
                     <Link href="/book" className={`btn btn-primary ${styles.ctaBtn}`}>
                         {ct('bookConsultation')}
                     </Link>
@@ -120,36 +139,10 @@ const Header = () => {
                     <div className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`} onClick={(e) => e.stopPropagation()}>
                         <div className={styles.mobileMenuHeader}>
                             <span className={styles.mobileMenuTitle}>Menu</span>
-                            <button className={styles.closeBtn} onClick={closeMobileMenu} aria-label="Close menu">
-                                <i className="fa-solid fa-times"></i>
-                            </button>
-                        </div>
-
-                        {/* Mobile Language Switcher */}
-                        <div className={styles.mobileLangSwitcher}>
-                            {locales.map((cur) => (
-                                <Link
-                                    key={cur}
-                                    href={pathname}
-                                    locale={cur}
-                                    className={`${styles.mobileLangBtn} ${locale === cur ? styles.mobileLangBtnActive : ''}`}
-                                    onClick={closeMobileMenu}
-                                >
-                                    {cur.toUpperCase()}
-                                </Link>
-                            ))}
                         </div>
 
                         {/* Mobile Navigation */}
                         <nav className={styles.mobileNav}>
-                            <Link
-                                href="/"
-                                className={`${styles.mobileNavLink} ${isActive('/') ? styles.mobileNavLinkActive : ''}`}
-                                onClick={closeMobileMenu}
-                            >
-                                <i className="fa-solid fa-home"></i>
-                                {t('home')}
-                            </Link>
                             <Link
                                 href="/services-overview"
                                 className={`${styles.mobileNavLink} ${isActive('/services-overview') ? styles.mobileNavLinkActive : ''}`}
@@ -192,11 +185,19 @@ const Header = () => {
                             </Link>
                         </nav>
 
-                        {/* Mobile CTA */}
-                        <div className={styles.mobileCta}>
-                            <Link href="/book" className={`btn btn-primary ${styles.mobileCtaBtn}`} onClick={closeMobileMenu}>
-                                {ct('bookConsultation')}
-                            </Link>
+                        {/* Mobile Language Switcher (MOVED TO BOTTOM) */}
+                        <div className={styles.mobileLangSwitcher}>
+                            {locales.map((loc) => (
+                                <Link
+                                    key={loc.code}
+                                    href={pathname}
+                                    locale={loc.code}
+                                    className={`${styles.mobileLangBtn} ${locale === loc.code ? styles.mobileLangBtnActive : ''}`}
+                                    onClick={closeMobileMenu}
+                                >
+                                    <span className={styles.mobileFlag}>{loc.flag}</span>
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>
